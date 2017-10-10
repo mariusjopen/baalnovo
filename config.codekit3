@@ -9,30 +9,30 @@
 	],
 "creatorBuild": "25900",
 "files": {
-	"\/css\/combine.sass": {
+	"\/css\/combine.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
-		"ft": 2,
+		"ft": 4,
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/css\/min\/combine.min.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
-	"\/css\/general.sass": {
+	"\/css\/general.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
-		"ft": 2,
+		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/general.min.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/css\/min\/combine.min.css": {
@@ -65,17 +65,17 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/css\/mobile.sass": {
+	"\/css\/mobile.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
-		"ft": 2,
+		"ft": 4,
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/mobile.min.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/footer.php": {
@@ -2116,7 +2116,7 @@
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 1
