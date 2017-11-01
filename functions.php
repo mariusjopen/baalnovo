@@ -99,24 +99,10 @@ function create_post_type_aktuelles() {
       ),
       'public' => true,
       'has_archive' => true,
-			'taxonomies'  => array( 'aktuelles-category' ),
     )
   );
 }
 add_action( 'init', 'create_post_type_aktuelles' );
 
-function create_post_type_category_aktuelles() {
-
-    register_taxonomy(
-        'aktuelles-category',
-        'aktuelles',
-        array(
-            'label' => __( 'Category' ),
-            'rewrite' => array( 'slug' => 'aktuelles-category' ),
-            'hierarchical' => true,
-        )
-    );
-}
-add_action( 'init', 'create_post_type_category_aktuelles' );
 
 ?>
