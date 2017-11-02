@@ -2,8 +2,6 @@
 
 <p>SEITE</p>
 
-<p>Vorschaubild</p>
-
 <?php
 $image = get_field('vorschau_bild');
 $size = '_768';
@@ -12,29 +10,59 @@ if( $image ) {
 }
 ?>
 
-<p>Gruppe</p>
-
 <?php
 if( have_rows('inhalt') ):
 
     while ( have_rows('inhalt') ) : the_row();
 
-        if( get_row_layout() == 'text' ):
+        if( get_row_layout() == 'group_text' ):
+        ?>
 
-        	echo get_sub_field('text');
+        	<p><?php echo get_sub_field('text'); ?></p>
 
-        elseif( get_row_layout() == 'bild' ):
+        <?php
+        elseif( get_row_layout() == 'group_bild' ):
+        ?>
 
-        	echo get_sub_field('bild');
+          <?php
+          $image = get_sub_field('bild');
+          $size = '_768';
+          if( $image ) {
+            echo wp_get_attachment_image( $image, $size );
+          }
+          ?>
 
-        elseif( get_row_layout() == 'galerie' ):
+        <?php
+        elseif( get_row_layout() == 'group_galerie' ):
+        ?>
 
-        	echo get_sub_field('galerie');
+          <?php
+          $images = get_sub_field('galerie');
+          $size = '_768';
+          if( $images ):
+          ?>
+            <ul>
+                <?php
+                foreach( $images as $image ):
+                ?>
+                    <li>
+                      <?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+                    </li>
+                <?php
+                endforeach;
+                ?>
+            </ul>
+          <?php
+          endif;
+          ?>
 
-        elseif( get_row_layout() == 'youtube' ):
+        <?php
+        elseif( get_row_layout() == 'group_youtube' ):
+        ?>
 
-        	echo get_sub_field('youtube');
+        	<p><?php echo get_sub_field('youtube'); ?></p>
 
+        <?php
         endif;
 
     endwhile;

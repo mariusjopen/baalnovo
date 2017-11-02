@@ -4,8 +4,6 @@
 
 <p>Aktuelles</p>
 
-<p>Vorschaubild</p>
-
 <?php
 $image = get_field('vorschau_bild');
 $size = '_768';
@@ -13,8 +11,6 @@ if( $image ) {
   echo wp_get_attachment_image( $image, $size );
 }
 ?>
-
-<p>Artikel Liste</p>
 
 <?php
 query_posts(array(
@@ -25,8 +21,6 @@ while (have_posts()) : the_post();
 ?>
 
   <div class="post">
-
-    <p>Artikel</p>
 
     <a href="<?php the_permalink() ?>">
       <?php the_title(); ?>
@@ -55,6 +49,5 @@ while (have_posts()) : the_post();
 <?php
 endwhile;
 ?>
-
 
 <?php get_footer(); ?>
