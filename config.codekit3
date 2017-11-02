@@ -168,6 +168,12 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/page-aktuelles.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-aktuelles.php",
+		"oF": 0
+		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,
