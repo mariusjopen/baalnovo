@@ -10,15 +10,15 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 add_action( 'after_setup_theme', 'image_sizes' );
 
 add_action( 'init', 'register_my_menu' );
+
 add_action( 'init', 'create_post_type_ensemble' );
 add_action( 'init', 'create_post_type_category_ensemble' );
 add_action( 'init', 'create_post_type_stuecke' );
+add_action( 'init', 'create_post_type_category_stuecke' );
 add_action( 'init', 'create_post_type_aktuelles' );
-
 
 remove_action( 'wp_head', 'wp_generator' );
 add_filter( 'show_admin_bar', '__return_false' );
-
 
 // JAVACSRIPT, CSS
 
@@ -27,7 +27,6 @@ function add_theme_scripts(){
 	wp_enqueue_script('app', get_template_directory_uri()."/js/min/combine.min.js", array( 'jquery' ), $ver);
   wp_enqueue_style('app-style', get_template_directory_uri()."/css/min/combine.min.css", array(), $ver);
 }
-
 
 // MENU
 
@@ -52,15 +51,15 @@ function create_post_type_ensemble() {
 }
 
 function create_post_type_category_ensemble() {
-    register_taxonomy(
-        'ensemble-category',
-        'ensemble',
-        array(
-            'label' => __( 'Category' ),
-            'rewrite' => array( 'slug' => 'ensemble-category' ),
-            'hierarchical' => true,
-        )
-    );
+  register_taxonomy(
+    'ensemble-category',
+    'ensemble',
+    array(
+      'label' => __( 'Category' ),
+      'rewrite' => array( 'slug' => 'ensemble-category' ),
+      'hierarchical' => true,
+    )
+  );
 }
 
 // STÜCKE
@@ -80,17 +79,16 @@ function create_post_type_stuecke() {
 }
 
 function create_post_type_category_stuecke() {
-    register_taxonomy(
-        'stuecke-category',
-        'stuecke',
-        array(
-            'label' => __( 'Category' ),
-            'rewrite' => array( 'slug' => 'stuecke-category' ),
-            'hierarchical' => true,
-        )
-    );
+  register_taxonomy(
+    'stuecke-category',
+    'stuecke',
+    array(
+      'label' => __( 'Category' ),
+      'rewrite' => array( 'slug' => 'stuecke-category' ),
+      'hierarchical' => true,
+    )
+  );
 }
-add_action( 'init', 'create_post_type_category_stuecke' );
 
 // AKTUELLES
 
