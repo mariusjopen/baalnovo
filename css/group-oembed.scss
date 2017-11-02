@@ -1,5 +1,5 @@
-.embed-container {
-  position: relative; 
+.group-embed {
+  position: relative;
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
@@ -7,9 +7,9 @@
   height: auto;
 }
 
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
+.group-embed iframe,
+.group-embed object,
+.group-embed embed {
   position: absolute;
   top: 0;
   left: 0;
