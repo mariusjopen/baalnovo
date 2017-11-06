@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<p>SEITE</p>
+<p><?php wp_title(''); ?></p>
 
 <div class="main-image">
   <?php
@@ -99,23 +99,54 @@
             <?php
             $post_objects = get_sub_field('stucke_einfugen');
             if( $post_objects ):
-            ?>
+              foreach( $post_objects as $post):
+                setup_postdata($post); ?>
 
-              <ul>
-                <?php foreach( $post_objects as $post): ?>
-                  <?php setup_postdata($post); ?>
-                  <li>
+                <div class="vorschau-artikel">
+
+                  <div class="vorschau-titel">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
+                  </div>
 
-              <?php wp_reset_postdata(); ?>
+                  <div class="vorschau-bild">
+                    <?php
+                    if( have_rows('bilder') ):
+                  	   while( have_rows('bilder') ): the_row();
 
-            <?php
+                         $image = get_sub_field('vorschau_bild');
+                         $size = '_768';
+                         if( $image ) {
+                           echo wp_get_attachment_image( $image, $size );
+                         }
+
+                      endwhile;
+                    endif;
+                    ?>
+                  </div>
+
+                  <div class="vorschau-text">
+                    <?php
+                    if( have_rows('texte') ):
+                  	   while( have_rows('texte') ): the_row();
+                       ?>
+
+                        <p><?php echo get_sub_field('kurztext'); ?></p>
+
+                       <?php
+                       endwhile;
+                    endif;
+                    ?>
+                  </div>
+
+                </div>
+
+              <?php
+              endforeach;
+              wp_reset_postdata();
             endif;
             ?>
           </div>
+
 
         <?php
         elseif( get_row_layout() == 'group_aktuelles' ):
@@ -125,31 +156,54 @@
             <?php
             $post_objects = get_sub_field('aktuelles_einfugen');
             if( $post_objects ):
-            ?>
+              foreach( $post_objects as $post):
+                setup_postdata($post); ?>
 
-              <ul>
-                <?php foreach( $post_objects as $post): ?>
-                  <?php setup_postdata($post); ?>
-                  <li>
+                <div class="vorschau-artikel">
+
+                  <div class="vorschau-titel">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                  </div>
 
+                  <div class="vorschau-bild">
                     <?php
-                    $image = the_sub_field('vorschau_bild', $post_object->ID);
-                    $size = '_768';
-                    if( $image ) {
-                      echo wp_get_attachment_image( $image, $size );
-                    }
+                    if( have_rows('vorschau') ):
+                       while( have_rows('vorschau') ): the_row();
+
+                         $image = get_sub_field('vorschau_bild');
+                         $size = '_768';
+                         if( $image ) {
+                           echo wp_get_attachment_image( $image, $size );
+                         }
+
+                      endwhile;
+                    endif;
                     ?>
-                  </li>
-                <?php endforeach; ?>
-              </ul>
+                  </div>
 
-              <?php wp_reset_postdata(); ?>
+                  <div class="vorschau-text">
+                    <?php
+                    if( have_rows('vorschau') ):
+                       while( have_rows('vorschau') ): the_row();
+                       ?>
 
-            <?php
+                        <p><?php echo get_sub_field('kurzer_text'); ?></p>
+
+                       <?php
+                       endwhile;
+                    endif;
+                    ?>
+                  </div>
+
+                </div>
+
+              <?php
+              endforeach;
+              wp_reset_postdata();
             endif;
             ?>
           </div>
+
 
         <?php
         endif;
