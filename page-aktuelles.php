@@ -2,7 +2,7 @@
 
 <?php get_header(); ?>
 
-<p>Aktuelles</p>
+<p><?php wp_title(''); ?></p>
 
 <?php
 $image = get_field('vorschau_bild');
