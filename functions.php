@@ -17,6 +17,8 @@ add_action( 'init', 'create_post_type_stuecke' );
 add_action( 'init', 'create_post_type_category_stuecke' );
 add_action( 'init', 'create_post_type_aktuelles' );
 
+add_action( 'init', 'get_id_by_slug' );
+
 remove_action( 'wp_head', 'wp_generator' );
 add_filter( 'show_admin_bar', '__return_false' );
 
@@ -118,6 +120,16 @@ function image_sizes(){
 	add_image_size( '_256', 256, 0, 0 );
 }
 
+// GET PAGE ID BY SLUG
+
+function get_id_by_slug($page_slug) {
+	$page = get_page_by_path($page_slug);
+	if ($page) {
+		return $page->ID;
+	} else {
+		return null;
+	}
+}
 
 
 ?>
