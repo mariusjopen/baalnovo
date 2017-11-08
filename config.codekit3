@@ -22,6 +22,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/front-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/front-page.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/general.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -123,16 +136,6 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/js\/app.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "\/js\/min\/app.min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
 	"\/js\/combine.js": {
 		"ft": 64,
 		"ma": 0,
@@ -143,12 +146,12 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/js\/extra.js": {
+	"\/js\/date-sorting.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
-		"oAP": "\/js\/min\/extra.min.js",
+		"oAP": "\/js\/min\/date-sorting.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
