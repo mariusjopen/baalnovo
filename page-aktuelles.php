@@ -29,23 +29,25 @@
         <?php the_title(); ?>
       </a>
 
-      <?php
-      if( have_rows('vorschau') ):
-        while( have_rows('vorschau') ): the_row();
-
-          $image = get_sub_field('vorschau_bild');
-          $size = '_768';
-          if( $image ) {
-            echo wp_get_attachment_image( $image, $size );
-          }
-          ?>
-
-          <p><?php echo get_sub_field('kurzer_text'); ?></p>
-
+      <div class="vorschau">
         <?php
-        endwhile;
-      endif;
-      ?>
+        if( have_rows('vorschau') ):
+          while( have_rows('vorschau') ): the_row();
+
+            $image = get_sub_field('vorschau_bild');
+            $size = '_768';
+            if( $image ) {
+              echo wp_get_attachment_image( $image, $size );
+            }
+            ?>
+
+            <p><?php echo get_sub_field('kurzer_text'); ?></p>
+
+          <?php
+          endwhile;
+        endif;
+        ?>
+      </div>
 
     </div>
 

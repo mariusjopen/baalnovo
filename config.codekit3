@@ -101,6 +101,19 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/stuecke-list.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/stuecke-list.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -186,11 +199,28 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/stueck-filter.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/min\/stueck-filter.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/page-aktuelles.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-aktuelles.php",
+		"oF": 0
+		},
+	"\/page-stuecke.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-stuecke.php",
 		"oF": 0
 		},
 	"\/page.php": {
