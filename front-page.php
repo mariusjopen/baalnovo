@@ -18,7 +18,6 @@
 
 <div class="content">
 
-
   <div class="spielplan">
 
     <?php
@@ -46,7 +45,7 @@
             $date_time_mod = str_replace(':', '', $date_time);
             ?>
 
-            <div class="post-event" data-date="">
+            <div class="post-event" data-date="<?php echo $date_time_mod ?>">
               <a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
                 <div class="title"><?php the_title(); ?></div>
                 <div class="date"><?php echo get_sub_field('date'); ?></div>
@@ -56,7 +55,6 @@
               </br>
               </a>
             </div>
-
 
             <?php
             endwhile;
@@ -113,6 +111,7 @@
     endwhile;
     ?>
   </div>
+
 </div>
 
 <?php get_footer(); ?>
