@@ -149,19 +149,6 @@
 
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<div class="flex">
 	  <?php
 	  if( have_rows('inhalt') ):

@@ -240,6 +240,13 @@
 		"oAP": "\/page-projekte.php",
 		"oF": 0
 		},
+	"\/page-spielplan.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-spielplan.php",
+		"oF": 0
+		},
 	"\/page-stuecke.php": {
 		"cB": 0,
 		"ft": 8192,
