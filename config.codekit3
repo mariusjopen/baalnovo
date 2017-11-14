@@ -7,7 +7,7 @@
 		"uuidString": "C417FE28-5D50-4C43-AEB4-8E94CA2BDA4B"
 		}
 	],
-"creatorBuild": "26097",
+"creatorBuild": "26148",
 "files": {
 	"\/css\/combine.scss": {
 		"aP": 0,
@@ -277,6 +277,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single-aktuelles.php",
+		"oF": 0
+		},
+	"\/single-ensemble.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-ensemble.php",
 		"oF": 0
 		},
 	"\/single-projekte.php": {
