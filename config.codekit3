@@ -233,6 +233,13 @@
 		"oAP": "\/page-ensemble.php",
 		"oF": 0
 		},
+	"\/page-projekte.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-projekte.php",
+		"oF": 0
+		},
 	"\/page-stuecke.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -270,6 +277,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single-aktuelles.php",
+		"oF": 0
+		},
+	"\/single-projekte.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-projekte.php",
 		"oF": 0
 		},
 	"\/single-stuecke.php": {

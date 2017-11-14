@@ -115,7 +115,7 @@ function create_post_type_projekte() {
     array(
       'labels' => array(
         'name' => __( 'Projekte' ),
-        'singular_name' => __( 'Projekte' )
+        'singular_name' => __( 'Projekt' )
       ),
       'public' => true,
       'has_archive' => true,
