@@ -101,6 +101,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/min\/stuecke-list.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/stuecke-list.min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/stuecke-list.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -214,6 +224,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-aktuelles.php",
+		"oF": 0
+		},
+	"\/page-ensemble.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-ensemble.php",
 		"oF": 0
 		},
 	"\/page-stuecke.php": {

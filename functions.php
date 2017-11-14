@@ -16,6 +16,7 @@ add_action( 'init', 'create_post_type_category_ensemble' );
 add_action( 'init', 'create_post_type_stuecke' );
 add_action( 'init', 'create_post_type_category_stuecke' );
 add_action( 'init', 'create_post_type_aktuelles' );
+add_action( 'init', 'create_post_type_projekte' );
 
 add_action( 'init', 'get_id_by_slug' );
 
@@ -100,6 +101,21 @@ function create_post_type_aktuelles() {
       'labels' => array(
         'name' => __( 'Aktuelles' ),
         'singular_name' => __( 'Aktuelles' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
+
+// PROJEKTE
+
+function create_post_type_projekte() {
+  register_post_type( 'projekte',
+    array(
+      'labels' => array(
+        'name' => __( 'Projekte' ),
+        'singular_name' => __( 'Projekte' )
       ),
       'public' => true,
       'has_archive' => true,
