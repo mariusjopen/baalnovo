@@ -226,6 +226,13 @@
 		"oAP": "\/page-aktuelles.php",
 		"oF": 0
 		},
+	"\/page-download.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-download.php",
+		"oF": 0
+		},
 	"\/page-ensemble.php": {
 		"cB": 0,
 		"ft": 8192,
