@@ -8,18 +8,8 @@
 
 <div class="content">
 
-	<div class="kurz-text">
-		 <p><?php echo get_sub_field('text'); ?></p>
-		 <?php
-	 	if( have_rows('vorschau') ):
-	 		while( have_rows('vorschau') ): the_row();
-	 		?>
-			 <p><?php echo get_sub_field('kurzer_text'); ?></p>
-	 		<?php
-	 		endwhile;
-	 	endif;
-	 	?>
-	</div>
+	
+	<?php include(locate_template('inc/text-kurz.php')); ?>
 
 	<div class="flex">
 	  <?php

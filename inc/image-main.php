@@ -1,5 +1,5 @@
-<!-- IMAGE MAIN -->
-<div class="main-image">
+<!-- START IMAGE MAIN -->
+<div class="image-main">
   <?php
   $image = get_field('vorschau_bild');
   $size = '_768';
@@ -9,3 +9,4 @@
   }
   ?>
 </div>
+<!-- END IMAGE MAIN -->

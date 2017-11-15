@@ -18,17 +18,7 @@ $date_url = $trimmed;
 		<p><?php the_field('untertitel'); ?></p>
 	</div>
 
-	<div class="kurztext">
-		<?php
-			if( have_rows('texte') ):
-				while( have_rows('texte') ): the_row();
-				?>
-				<p><?php the_sub_field('kurztext'); ?></p>
-				<?php
-				endwhile;
-			endif;
-			?>
-	</div>
+	<?php include(locate_template('inc/text-kurz.php')); ?>
 
 	<div class="this-event">
 

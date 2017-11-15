@@ -8,19 +8,7 @@
 
 <div class="content">
 
-	<div class="kurz-text">
-		<?php
-		if( have_rows('text') ):
-			while( have_rows('text') ): the_row();
-			?>
-
-				<p><?php echo get_sub_field('kurzbeschreibung'); ?></p>
-
-			<?php
-			endwhile;
-		endif;
-		?>
-	</div>
+	<?php include(locate_template('inc/text-kurz.php')); ?>
 
 	<div class="galerie">
 			<?php

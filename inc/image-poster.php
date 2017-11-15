@@ -1,5 +1,5 @@
-<!-- IMAGE POSTER -->
-<div class="poster">
+<!-- START IMAGE POSTER -->
+<div class="image-poster">
   <?php
   $image = get_field('poster');
   $size = '_768';
@@ -9,3 +9,4 @@
   }
   ?>
 </div>
+<!-- END IMAGE POSTER -->

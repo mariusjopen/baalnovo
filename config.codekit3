@@ -166,6 +166,13 @@
 		"oAP": "\/inc\/image-poster.php",
 		"oF": 0
 		},
+	"\/inc\/text-kurz.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/text-kurz.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -319,13 +326,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single-projekte.php",
-		"oF": 0
-		},
-	"\/single-projekte0.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/single-projekte0.php",
 		"oF": 0
 		},
 	"\/single-stuecke.php": {

@@ -8,9 +8,8 @@
 
 <div class="content">
 
-	<div class="kurz-text">
-		 <p><?php echo get_field('kurzer_text'); ?></p>
-	</div>
+
+	<?php include(locate_template('inc/text-kurz.php')); ?>
 
 
 	<div class="integrierte-stuecke">
