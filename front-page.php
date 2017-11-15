@@ -2,18 +2,7 @@
 
 <p>Start</p>
 
-<div class="main-image">
-  <?php
-  $id = get_id_by_slug('start');
-
-  $image = get_field('vorschau_bild',$id);
-  $size = '_768';
-  if( $image ) {
-    echo wp_get_attachment_image( $image, $size );
-  }
-  ?>
-</div>
-
+<?php include(locate_template('inc/image-main.php')); ?>
 
 
 <div class="content">

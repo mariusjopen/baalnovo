@@ -4,15 +4,7 @@
 
 <p><?php wp_title(''); ?></p>
 
-<div class="main-image">
-  <?php
-  $image = get_field('vorschau_bild');
-  $size = '_768';
-  if( $image ) {
-    echo wp_get_attachment_image( $image, $size );
-  }
-  ?>
-</div>
+<?php include(locate_template('inc/image-main.php')); ?>
 
 <div class="content">
 
@@ -52,23 +44,7 @@
         <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
       </a>
 
-      <div class="poster">
-        <?php
-        if( have_rows('bilder') ):
-          while( have_rows('bilder') ): the_row();
-
-            $image = get_sub_field('poster');
-            $size = '_768';
-            if( $image ) {
-              echo wp_get_attachment_image( $image, $size );
-            }
-            ?>
-
-          <?php
-          endwhile;
-        endif;
-        ?>
-      </div>
+      <?php include(locate_template('inc/image-poster.php')); ?>
 
     </div>
 

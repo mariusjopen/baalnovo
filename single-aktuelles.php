@@ -3,23 +3,7 @@
 
 <p><?php wp_title(''); ?></p>
 
-<div class="main-image">
-	<?php
-	if( have_rows('vorschau') ):
-		while( have_rows('vorschau') ): the_row();
-
-			$image = get_sub_field('vorschau_bild');
-			$size = '_768';
-			if( $image ) {
-				echo wp_get_attachment_image( $image, $size );
-			}
-			?>
-
-		<?php
-		endwhile;
-	endif;
-	?>
-</div>
+<?php include(locate_template('inc/image-main.php')); ?>
 
 
 <div class="content">

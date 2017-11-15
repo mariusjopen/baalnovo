@@ -152,6 +152,20 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/image-main.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/image-main.php",
+		"oF": 0
+		},
+	"\/inc\/image-poster.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/image-poster.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -305,6 +319,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/single-projekte.php",
+		"oF": 0
+		},
+	"\/single-projekte0.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single-projekte0.php",
 		"oF": 0
 		},
 	"\/single-stuecke.php": {

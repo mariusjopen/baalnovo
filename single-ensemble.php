@@ -3,23 +3,7 @@
 
 <p><?php wp_title(''); ?></p>
 
-<div class="main-image">
-	<?php
-	if( have_rows('bilder') ):
-		while( have_rows('bilder') ): the_row();
-
-			$image = get_sub_field('portrait');
-			$size = '_768';
-			if( $image ) {
-				echo wp_get_attachment_image( $image, $size );
-			}
-			?>
-
-		<?php
-		endwhile;
-	endif;
-	?>
-</div>
+<?php include(locate_template('inc/image-main.php')); ?>
 
 
 <div class="content">
@@ -39,13 +23,8 @@
 	</div>
 
 	<div class="galerie">
-		<?php
-		if( have_rows('bilder') ):
-			while( have_rows('bilder') ): the_row();
-			?>
-
 			<?php
-			$images = get_sub_field('gallerie');
+			$images = get_field('gallerie');
 			$size = '_768';
 			if( $images ):
 			?>
@@ -63,11 +42,6 @@
 			<?php
 			endif;
 			?>
-
-			<?php
-			endwhile;
-		endif;
-		?>
 	</div>
 
 	<div class="langer-text">
