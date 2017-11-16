@@ -4,7 +4,10 @@
 
 <p><?php wp_title(''); ?></p>
 
-<?php include(locate_template('inc/image-main.php')); ?>
+<?php
+$image = get_field('vorschau_bild');
+include(locate_template('inc/image-main.php'));
+?>
 
 <div class="content">
 
@@ -40,7 +43,12 @@
 
     <div class="post-stuecke <?php foreach( $terms as $term ) echo ' ' . $term->slug; ?>">
     	<?php include(locate_template('inc/title-link.php')); ?>
-      <?php include(locate_template('inc/image-poster.php')); ?>
+
+			<?php
+			$image = get_field('poster');
+			include(locate_template('inc/image-poster.php'));
+			?>
+
     </div>
 
   <?php

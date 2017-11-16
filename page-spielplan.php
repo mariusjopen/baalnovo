@@ -4,7 +4,10 @@
 
 <p><?php wp_title(''); ?></p>
 
-<?php include(locate_template('inc/image-main.php')); ?>
+<?php
+$image = get_field('vorschau_bild');
+include(locate_template('inc/image-main.php'));
+?>
 
 <div class="content">
 
@@ -36,7 +39,10 @@
 
 	        <div class="post-event" data-date="<?php echo $date_time_mod ?>">
 
-	          <?php include(locate_template('inc/image-poster.php')); ?>
+	          <?php
+						$image = get_field('poster');
+						include(locate_template('inc/image-poster.php'));
+						?>
 
 	          <a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
 	            <div class="title"><?php the_title(); ?></div>

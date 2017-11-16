@@ -10,7 +10,10 @@ $date_url = $trimmed;
 
 <p><?php wp_title(''); ?></p>
 
-<?php include(locate_template('inc/image-main.php')); ?>
+<?php
+$image = get_field('vorschau_bild');
+include(locate_template('inc/image-main.php'));
+?>
 
 <div class="content">
 
@@ -58,7 +61,10 @@ $date_url = $trimmed;
 		?>
 	</div>
 
-	<?php include(locate_template('inc/image-poster.php')); ?>
+	<?php
+	$image = get_field('poster');
+	include(locate_template('inc/image-poster.php'));
+	?>
 
 	<div class="mitwirkende">
 
