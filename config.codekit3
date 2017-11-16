@@ -173,6 +173,13 @@
 		"oAP": "\/inc\/text-kurz.php",
 		"oF": 0
 		},
+	"\/inc\/title-link.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/title-link.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,

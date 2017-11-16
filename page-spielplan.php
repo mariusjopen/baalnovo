@@ -25,73 +25,47 @@
     $the_query = new WP_Query( $args );
 
     if( $the_query->have_posts() ):
-      while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      while ( $the_query->have_posts() ) : $the_query->the_post();
 
-          <?php
-          if( have_rows('events') ):
-            while( have_rows('events') ): the_row();
+	      if( have_rows('events') ):
+	        while( have_rows('events') ): the_row();
 
-            $date_time = get_sub_field('date', false, false) . get_sub_field('zeit', false, false);
-            $date_time_mod = str_replace(':', '', $date_time);
-            ?>
+	        $date_time = get_sub_field('date', false, false) . get_sub_field('zeit', false, false);
+	        $date_time_mod = str_replace(':', '', $date_time);
+	        ?>
 
-            <div class="post-event" data-date="<?php echo $date_time_mod ?>">
+	        <div class="post-event" data-date="<?php echo $date_time_mod ?>">
 
-              <div class="poster">
-              <?php
-                if( have_rows('bilder') ):
-                  while( have_rows('bilder') ): the_row();
+	          <?php include(locate_template('inc/image-poster.php')); ?>
 
-                    $image = get_sub_field('poster');
-                    $size = '_768';
-                    if( $image ) {
-                      echo wp_get_attachment_image( $image, $size );
-                    }
-                    ?>
+	          <a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
+	            <div class="title"><?php the_title(); ?></div>
+	          </a>
 
-                  <?php
-                  endwhile;
-                endif;
-                ?>
-              </div>
+	          <div class="row">
+	            <div class="date"><?php echo get_sub_field('date'); ?></div>
+	            <div class="time"><?php echo get_sub_field('zeit'); ?></div>
+	            <div class="location"><?php echo get_sub_field('ort'); ?></div>
+	            <div class="city"><?php echo get_sub_field('stadt'); ?></div>
+	            </br>
+	          </div>
 
-              <a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
-                <div class="title"><?php the_title(); ?></div>
-              </a>
+	          <div class="kurz">
+	            <div class="tickets"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" >Ticket</a></div>
 
-              <div class="row">
-                <div class="date"><?php echo get_sub_field('date'); ?></div>
-                <div class="time"><?php echo get_sub_field('zeit'); ?></div>
-                <div class="location"><?php echo get_sub_field('ort'); ?></div>
-                <div class="city"><?php echo get_sub_field('stadt'); ?></div>
-                </br>
-              </div>
+							<?php
+							$kurzer_text = get_field('kurzer_text');
+							include(locate_template('inc/text-kurz.php'));
+							?>
 
-              <div class="kurz">
-                <div class="tickets"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" >Ticket</a></div>
+	          </div>
 
-                <div class="kurztext">
-              		<?php
-              			if( have_rows('texte') ):
-              				while( have_rows('texte') ): the_row();
-              				?>
-              				<p><?php the_sub_field('kurztext'); ?></p>
-              				<?php
-              				endwhile;
-              			endif;
-              			?>
-              	</div>
-              </div>
+	        </div>
 
-            </div>
+	        <?php
+	        endwhile;
+	      endif;
 
-            <?php
-            endwhile;
-          endif;
-          ?>
-
-
-      <?php
       endwhile;
     endif;
     wp_reset_query();

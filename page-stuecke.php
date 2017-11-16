@@ -39,13 +39,8 @@
   ?>
 
     <div class="post-stuecke <?php foreach( $terms as $term ) echo ' ' . $term->slug; ?>">
-
-      <a href="<?php the_permalink() ?>">
-        <a href="<?php the_permalink() ?>"><?php the_title(); ?></a>
-      </a>
-
+    	<?php include(locate_template('inc/title-link.php')); ?>
       <?php include(locate_template('inc/image-poster.php')); ?>
-
     </div>
 
   <?php

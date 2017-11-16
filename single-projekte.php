@@ -9,7 +9,10 @@
 <div class="content">
 
 
-	<?php include(locate_template('inc/text-kurz.php')); ?>
+	<?php
+	$kurzer_text = get_field('kurzer_text');
+	include(locate_template('inc/text-kurz.php'));
+	?>
 
 
 	<div class="integrierte-stuecke">

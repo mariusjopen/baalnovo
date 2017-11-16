@@ -7,6 +7,7 @@
 <?php include(locate_template('inc/image-main.php')); ?>
 
 <div class="content">
+
   <?php
   query_posts(array(
     'post_type' => 'projekte'
@@ -17,21 +18,15 @@
 
     <div class="post">
 
-      <a href="<?php the_permalink() ?>">
-        <?php the_title(); ?>
-      </a>
+    	<?php include(locate_template('inc/title-link.php')); ?>
 
       <div class="vorschau">
-        <?php
-        $image = get_field('vorschau_bild');
-        $size = '_768';
-        if( $image ) {
-          echo wp_get_attachment_image( $image, $size );
-        }
-        ?>
-
-        <p><?php echo get_field('kurzer_text'); ?></p>
-
+        <?php include(locate_template('inc/image-main.php')); ?>
+				
+				<?php
+				$kurzer_text = get_field('kurzer_text');
+				include(locate_template('inc/text-kurz.php'));
+				?>
       </div>
 
     </div>
@@ -39,7 +34,7 @@
   <?php
   endwhile;
   ?>
-</div>
 
+</div>
 
 <?php get_footer(); ?>

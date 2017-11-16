@@ -18,7 +18,10 @@ $date_url = $trimmed;
 		<p><?php the_field('untertitel'); ?></p>
 	</div>
 
-	<?php include(locate_template('inc/text-kurz.php')); ?>
+	<?php
+	$kurzer_text = get_field('kurzer_text');
+	include(locate_template('inc/text-kurz.php'));
+	?>
 
 	<div class="this-event">
 
