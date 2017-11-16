@@ -140,17 +140,10 @@ include(locate_template('inc/image-main.php'));
 		?>
 	</div>
 
-	<div class="langtext">
-		<?php
-			if( have_rows('texte') ):
-				while( have_rows('texte') ): the_row();
-				?>
-				<p><?php the_sub_field('langer_text'); ?></p>
-				<?php
-				endwhile;
-			endif;
-			?>
-	</div>
+	<?php
+	$text_text = get_field('langer_text');
+	include(locate_template('inc/text-lang.php'));
+	?>
 
 	<div class="zitate">
 		<?php
@@ -160,7 +153,7 @@ include(locate_template('inc/image-main.php'));
 
 			<div class="post-zitate">
 
-				<div class="detail-zital">
+				<div class="detail-zitat">
 					<?php echo get_sub_field('zitat'); ?>
 				</div>
 
@@ -176,37 +169,13 @@ include(locate_template('inc/image-main.php'));
 		?>
 	</div>
 
-	<div class="gallerie">
-		<?php
-		if( have_rows('bilder') ):
-			while( have_rows('bilder') ): the_row();
-			?>
 
-				<?php
-				$images = get_sub_field('gallerie');
-				$size = '_768';
-				if( $images ):
-				?>
-					<ul>
-						<?php
-						foreach( $images as $image ):
-						?>
-							<li>
-								<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-							</li>
-						<?php
-						endforeach;
-						?>
-					</ul>
-				<?php
-				endif;
-				?>
+	<?php
+	$images = get_field('gallerie');
+	include(locate_template('inc/image-gallery.php'));
+	?>
 
-			<?php
-			endwhile;
-		endif;
-		?>
-	</div>
+
 
 	<div class="all-events">
 		<?php

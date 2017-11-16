@@ -55,7 +55,9 @@ include(locate_template('inc/image-main.php'));
 								include(locate_template('inc/image-main.php'));
 								?>
 
-	              <?php include(locate_template('inc/title-link.php')); ?>
+	              <?php
+								include(locate_template('inc/title-link.php'));
+								?>
 	    				</div>
 
 	      	<?php

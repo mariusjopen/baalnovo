@@ -2,8 +2,10 @@
 
 <p>Start</p>
 
-<?php include(locate_template('inc/image-main.php')); ?>
-
+<?php
+$image = get_field('vorschau_bild');
+include(locate_template('inc/image-main.php'));
+?>
 
 <div class="content">
 
@@ -71,10 +73,12 @@
     ?>
 
       <div class="post">
-
         <?php include(locate_template('inc/title-link.php')); ?>
-        <?php include(locate_template('inc/image-main.php')); ?>
 
+				<?php
+				$image = get_field('vorschau_bild');
+				include(locate_template('inc/image-main.php'));
+				?>
       </div>
 
     <?php

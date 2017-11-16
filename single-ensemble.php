@@ -15,41 +15,15 @@ include(locate_template('inc/image-main.php'));
 	include(locate_template('inc/text-kurz.php'));
 	?>
 
-	<div class="galerie">
-			<?php
-			$images = get_field('gallerie');
-			$size = '_768';
-			if( $images ):
-			?>
-				<ul>
-					<?php
-					foreach( $images as $image ):
-					?>
-						<li>
-							<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-						</li>
-					<?php
-					endforeach;
-					?>
-				</ul>
-			<?php
-			endif;
-			?>
-	</div>
+	<?php
+	$images = get_field('gallerie');
+	include(locate_template('inc/image-gallery.php'));
+	?>
 
-	<div class="langer-text">
-		<?php
-		if( have_rows('text') ):
-			while( have_rows('text') ): the_row();
-			?>
-
-				<p><?php echo get_sub_field('langer_text'); ?></p>
-
-			<?php
-			endwhile;
-		endif;
-		?>
-	</div>
+	<?php
+	$text_text = get_field('langer_text');
+	include(locate_template('inc/text-lang.php'));
+	?>
 
 	<div class="presse">
 	  <?php

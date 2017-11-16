@@ -24,9 +24,10 @@ include(locate_template('inc/image-main.php'));
 	      if( get_row_layout() == 'group_text' ):
 	      ?>
 
-	        <div class="group-text">
-	      	   <p><?php echo get_sub_field('text'); ?></p>
-	        </div>
+					<?php
+					$text_text = get_sub_field('text');
+					include(locate_template('inc/text-lang.php'));
+					?>
 
 	      <?php
 	      elseif( get_row_layout() == 'group_bild' ):
