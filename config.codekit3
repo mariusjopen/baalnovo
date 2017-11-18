@@ -22,6 +22,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/content.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/front-page.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -61,6 +74,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/head.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/head.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/min\/combine.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -78,6 +104,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/min\/general.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/head.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/head.min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -108,6 +144,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/min\/stuecke-list.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/wrapper.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/wrapper.min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -185,13 +231,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/flex.php",
-		"oF": 0
-		},
-	"\/inc\/head.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/head.php",
 		"oF": 0
 		},
 	"\/inc\/image-gallery.php": {
