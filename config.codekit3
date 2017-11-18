@@ -152,6 +152,34 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/download.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/download.php",
+		"oF": 0
+		},
+	"\/inc\/events-all.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/events-all.php",
+		"oF": 0
+		},
+	"\/inc\/events-spielplan.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/events-spielplan.php",
+		"oF": 0
+		},
+	"\/inc\/events-this.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/events-this.php",
+		"oF": 0
+		},
 	"\/inc\/flex.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -208,11 +236,60 @@
 		"oAP": "\/inc\/insert-stuecke.php",
 		"oF": 0
 		},
+	"\/inc\/integrierte-stuecke.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/integrierte-stuecke.php",
+		"oF": 0
+		},
+	"\/inc\/mitwirkende.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/mitwirkende.php",
+		"oF": 0
+		},
 	"\/inc\/oembed.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/oembed.php",
+		"oF": 0
+		},
+	"\/inc\/page-aktuelles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/page-aktuelles.php",
+		"oF": 0
+		},
+	"\/inc\/presse.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/presse.php",
+		"oF": 0
+		},
+	"\/inc\/sponsoren.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/sponsoren.php",
+		"oF": 0
+		},
+	"\/inc\/stuecke-filter.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/stuecke-filter.php",
+		"oF": 0
+		},
+	"\/inc\/technische-details.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/technische-details.php",
 		"oF": 0
 		},
 	"\/inc\/text-kurz.php": {
@@ -248,6 +325,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/vorschau-stuecke.php",
+		"oF": 0
+		},
+	"\/inc\/zitate.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/zitate.php",
 		"oF": 0
 		},
 	"\/index.php": {

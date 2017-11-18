@@ -11,28 +11,10 @@ include(locate_template('inc/image-main.php'));
 
 <div class="content">
 
-	<div class="vorschau-aktuelles">
-	  <?php
-	  query_posts(array(
-	    'post_type' => 'aktuelles'
-	  ) );
+	<?php
+	include(locate_template('inc/vorschau-aktuelles.php'));
+	?>
 
-	  while (have_posts()) : the_post();
-	  ?>
-
-	    <div class="vorschau-aktuell">
-
-				<?php
-				include(locate_template('inc/vorschau-aktuelles.php'));
-				?>
-
-	    </div>
-
-	  <?php
-	  endwhile;
-	  ?>
-	</div>
-	
 </div>
 
 <?php get_footer(); ?>

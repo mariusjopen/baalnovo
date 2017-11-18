@@ -26,34 +26,11 @@ include(locate_template('inc/image-main.php'));
     $the_query = new WP_Query( $args );
 
     if( $the_query->have_posts() ):
-      while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+      while ( $the_query->have_posts() ) : $the_query->the_post();
 
-          <?php
-          if( have_rows('events') ):
-            while( have_rows('events') ): the_row();
+				$events = 'events';
+				include(locate_template('inc/events-all.php'));
 
-            $date_time = get_sub_field('date', false, false) . get_sub_field('zeit', false, false);
-            $date_time_mod = str_replace(':', '', $date_time);
-            ?>
-
-            <div class="post-event" data-date="<?php echo $date_time_mod ?>">
-              <a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
-                <div class="title"><?php the_title(); ?></div>
-                <div class="date"><?php echo get_sub_field('date'); ?></div>
-                <div class="time"><?php echo get_sub_field('zeit'); ?></div>
-                <div class="location"><?php echo get_sub_field('ort'); ?></div>
-                <div class="city"><?php echo get_sub_field('stadt'); ?></div>
-              </br>
-              </a>
-            </div>
-
-            <?php
-            endwhile;
-          endif;
-          ?>
-
-
-      <?php
       endwhile;
     endif;
     wp_reset_query();
@@ -62,29 +39,33 @@ include(locate_template('inc/image-main.php'));
   </div>
 
 
+	<div class="vorschau-aktuelles">
+		<?php
+		query_posts(array(
+			'post_type' => 'aktuelles'
+		) );
 
-  <div class="aktuelles">
-    <?php
-    query_posts(array(
-      'post_type' => 'aktuelles'
-    ) );
+		while (have_posts()) : the_post();
+		?>
 
-    while (have_posts()) : the_post();
-    ?>
-
-      <div class="post">
-        <?php include(locate_template('inc/title-link.php')); ?>
+			<div class="vorschau-aktuell">
 
 				<?php
+				include(locate_template('inc/title-link.php'));
+
 				$image = get_field('vorschau_bild');
 				include(locate_template('inc/image-main.php'));
-				?>
-      </div>
 
-    <?php
-    endwhile;
-    ?>
-  </div>
+				$kurzer_text = get_field('kurzer_text');
+				include(locate_template('inc/text-kurz.php'));
+				?>
+
+			</div>
+
+		<?php
+		endwhile;
+		?>
+	</div>
 
 </div>
 
