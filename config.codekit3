@@ -187,6 +187,13 @@
 		"oAP": "\/inc\/flex.php",
 		"oF": 0
 		},
+	"\/inc\/head.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/head.php",
+		"oF": 0
+		},
 	"\/inc\/image-gallery.php": {
 		"cB": 0,
 		"ft": 8192,

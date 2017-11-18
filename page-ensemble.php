@@ -2,11 +2,8 @@
 
 <?php get_header(); ?>
 
-<p><?php wp_title(''); ?></p>
-
 <?php
-$image = get_field('vorschau_bild');
-include(locate_template('inc/image-main.php'));
+include(locate_template('inc/head.php'));
 ?>
 
 <div class="content">
@@ -57,7 +54,7 @@ include(locate_template('inc/image-main.php'));
 
 									include(locate_template('inc/title-link.php'));
 									?>
-									
+
 		    				</div>
 
 		      	<?php

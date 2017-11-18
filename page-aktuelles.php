@@ -2,13 +2,6 @@
 
 <?php get_header(); ?>
 
-<?php wp_title(''); ?>
-
-<?php
-$image = get_field('vorschau_bild');
-include(locate_template('inc/image-main.php'));
-?>
-
 <div class="content">
 
 	<?php
