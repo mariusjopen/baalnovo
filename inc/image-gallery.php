@@ -1,4 +1,6 @@
 <!-- START IMAGE GALLERY -->
+<?php if( $images ): ?>
+
 <div class="gallery">
 	<?php
 	$size = '_768';
@@ -15,4 +17,6 @@
 	endif;
 	?>
 </div>
+
+<?php endif; ?>
 <!-- END IMAGE GALLERY -->
