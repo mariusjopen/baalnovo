@@ -1,0 +1,13 @@
+.events-this {
+		@extend .elements;
+}
+
+.events-all {
+		@extend .elements;
+}
+
+.post-event {
+    border-top: 1px solid black;
+    padding-top: $distances-2;
+    padding-bottom: $distances-2;
+}

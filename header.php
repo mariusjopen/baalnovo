@@ -20,21 +20,19 @@
 
 	<div class="wrapper">
 
-		<div class="head">
 
-			<div class="navigation">
+		<div class="navigation">
 
-				<div class="left">
-					DE | FR
-				</div>
-
-				<div class="middle">
-					<?php wp_title(''); ?>
-				</div>
-
-				<div class="right">
-					Menü
-				</div>
-
+			<div class="left">
+				DE | FR
 			</div>
+
+			<div class="middle">
+				<?php wp_title(''); ?>
+			</div>
+
+			<div class="right">
+				Menü
+			</div>
+
 		</div>

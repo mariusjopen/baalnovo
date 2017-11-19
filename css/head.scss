@@ -4,3 +4,26 @@
 		object-fit: cover;
 		position: fixed;
 }
+
+.navigation {
+		height: 35px;
+		@extend .wrapper-inside;
+		padding-top: 15px;
+}
+
+.left {
+    float: left;
+    width: 100px;
+}
+
+.right {
+    float: right;
+    width: 100px;
+    text-align: right;
+}
+
+.middle {
+    text-align: center;
+    width: calc(100% - 200px);
+    float: left;
+}

@@ -1,5 +1,4 @@
 <!-- START EVENTS ALL -->
-<div class="events-all">
 <?php
 if( have_rows($events) ):
 	while( have_rows($events) ): the_row();
@@ -22,5 +21,4 @@ if( have_rows($events) ):
 	endwhile;
 endif;
 ?>
-</div>
 <!-- END EVENTS ALL -->
