@@ -1,0 +1,10 @@
+.mitwirkende {
+		@extend .elements;
+		display: flex;
+}
+
+.regie,
+.mit {
+	width: 50%;
+	float: left;
+}

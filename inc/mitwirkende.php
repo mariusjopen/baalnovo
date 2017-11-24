@@ -2,6 +2,11 @@
 <div class="mitwirkende">
 
 	<div class="regie">
+
+		<div class="label">
+			Regie
+		</div>
+
 		<?php
 		if( have_rows('mitwirkende') ):
 			while( have_rows('mitwirkende') ): the_row();
@@ -22,9 +27,15 @@
 			endwhile;
 		endif;
 		?>
+
 	</div>
 
 	<div class="mit">
+
+		<div class="label">
+			Mit
+		</div>
+
 		<?php
 		if( have_rows('mitwirkende') ):
 			while( have_rows('mitwirkende') ): the_row();
@@ -45,6 +56,7 @@
 			endwhile;
 		endif;
 		?>
+
 	</div>
 
 </div>

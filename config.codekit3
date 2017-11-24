@@ -162,6 +162,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/min\/fonts.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/fonts.min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/min\/general.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -179,6 +189,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/min\/head.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/mitwirkende.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/mitwirkende.min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -221,6 +241,19 @@
 		"oAP": "\/css\/min\/wrapper.min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/css\/mitwirkende.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/mitwirkende.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		},
 	"\/css\/stueck.scss": {
 		"aP": 0,
