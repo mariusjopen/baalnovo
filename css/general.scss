@@ -4,7 +4,8 @@ html, * {
 }
 
 body {
-	font-size: $font-sizes-1;
+	font-family: 'Theinhardt-Light';
+	@extend .font-size-1;
 }
 
 img {

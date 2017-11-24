@@ -61,6 +61,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/fonts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/fonts.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/footer.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -273,6 +286,27 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/fonts\/Theinhardt-Light.eot": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Theinhardt-Light.eot",
+		"oF": 0
+		},
+	"\/fonts\/Theinhardt-Light.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Theinhardt-Light.ttf",
+		"oF": 0
+		},
+	"\/fonts\/Theinhardt-Light.woff": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/fonts\/Theinhardt-Light.woff",
+		"oF": 0
 		},
 	"\/footer.php": {
 		"cB": 0,
