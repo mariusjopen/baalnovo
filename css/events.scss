@@ -17,6 +17,10 @@
     @extend .table;
 }
 
+.post-event a {
+    width: 100%;
+}
+
 .post-event .location-city {
     width: 33%;
     float: right;
