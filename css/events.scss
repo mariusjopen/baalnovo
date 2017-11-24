@@ -1,9 +1,16 @@
 .events-this {
 		@extend .elements;
+		padding-bottom: 0px;
 }
 
 .events-all {
 		@extend .elements;
+}
+
+.ticket {
+	text-align: center;
+	padding-bottom: $distances-1;
+	@extend .font-size-2;
 }
 
 .post-event {
