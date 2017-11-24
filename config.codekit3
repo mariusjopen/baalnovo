@@ -61,6 +61,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/flexslider.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/flexslider.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -635,6 +648,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/flexslider.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/min\/flexslider.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/min\/app.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -665,12 +688,32 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/min\/flexslider.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/js\/min\/flexslider.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/stueck-filter.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 1,
 		"oAP": "\/js\/min\/stueck-filter.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/lib\/jquery.flexslider-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/jquery.flexslider-min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

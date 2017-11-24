@@ -1,21 +1,23 @@
 <!-- START IMAGE GALLERY -->
 <?php if( $images ): ?>
 
-<div class="gallery">
-	<?php
-	$size = '_768';
-	if( $images ):
-		foreach( $images as $image ):
-		?>
-
-		<div>
-			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-		</div>
-
+<div class="gallery flexslider">
+	<ul class="slides">
 		<?php
-		endforeach;
-	endif;
-	?>
+		$size = '_768';
+		if( $images ):
+			foreach( $images as $image ):
+			?>
+
+			<li>
+				<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
+			</li>
+
+			<?php
+			endforeach;
+		endif;
+		?>
+	</ul>
 </div>
 
 <?php endif; ?>
