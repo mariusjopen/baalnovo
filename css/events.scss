@@ -10,4 +10,22 @@
     border-top: 1px solid black;
     padding-top: $distances-2;
     padding-bottom: $distances-2;
+		height: $distances-2;
+}
+
+.post-event .location-city {
+    width: 33%;
+    float: right;
+    text-align: right;
+}
+
+.post-event .date-time {
+    width: 33%;
+    text-align: center;
+    float: left;
+}
+
+.post-event .title {
+    width: 33%;
+    float: left;
 }

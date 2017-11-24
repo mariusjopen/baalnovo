@@ -1,3 +1,28 @@
 .vorschau-aktuelles {
-		@extend .elements;
+	@extend .elements;
+}
+
+.vorschau-aktuell {
+    width: calc(100% / 3 - 17.5px);
+}
+
+.vorschau-aktuelles {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-vorschau img {
+    object-fit: cover;
+    height: 20vw;
+}
+
+.image-vorschau {
+    margin-bottom: $distances-2;
+}
+
+.vorschau-aktuell .text-kurz {
+	border: none;
+	padding-top: $distances-2;
 }

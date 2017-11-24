@@ -11,10 +11,10 @@
 		<div class="vorschau-aktuell">
 
 			<?php
-			include(locate_template('inc/title-link.php'));
-
 			$image = get_field('vorschau_bild');
 			include(locate_template('inc/image-vorschau.php'));
+
+			include(locate_template('inc/title-link.php'));
 
 			$kurzer_text = get_field('kurzer_text');
 			include(locate_template('inc/text-kurz.php'));
