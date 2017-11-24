@@ -232,6 +232,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/min\/technische-details.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/technische-details.min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/min\/wrapper.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -281,6 +291,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/technische-details.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/technische-details.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/texte.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -316,6 +339,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/vorschau.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/zitate.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/zitate.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

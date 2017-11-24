@@ -1,10 +1,8 @@
-.mitwirkende {
-		@extend .elements;
-		display: flex;
+
+.regie {
+	@extend .table;
 }
 
-.regie,
 .mit {
-	width: 50%;
-	float: left;
+	@extend .table;
 }

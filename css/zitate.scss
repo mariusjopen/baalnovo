@@ -1,0 +1,13 @@
+.zitate {
+	@extend .elements;
+	@extend .font-size-2;
+	text-align: center;
+}
+
+.post-zitate {
+	margin-bottom: $distances-4;
+}
+
+.zitate-detail {
+	margin-bottom: $distances-1;
+}

@@ -7,11 +7,11 @@
 
 		<div class="post-technische-details">
 
-			<div class="technische-details-title">
+			<div class="label">
 				<?php echo get_sub_field('detail_titel'); ?>
 			</div>
 
-			<div class="technische-details-info">
+			<div class="box">
 				<?php echo get_sub_field('details_info'); ?>
 			</div>
 

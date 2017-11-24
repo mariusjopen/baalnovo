@@ -1,0 +1,11 @@
+
+
+.label,
+.box {
+	width: 50%;
+	float: left;
+}
+
+.post-technische-details {
+    @extend .table;
+}

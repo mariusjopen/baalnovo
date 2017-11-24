@@ -1,6 +1,6 @@
 .wrapper-inside {
-	margin-left: $distances-1;
-	margin-right: $distances-1;
+	margin-left: $distances-3;
+	margin-right: $distances-3;
 }
 
 .elements {
@@ -17,4 +17,11 @@
 .font-size-2 {
 	font-size: 23px;
 	line-height: 30px;
+}
+
+.table {
+    border-top: 1px solid black;
+    padding-top: $distances-1;
+    padding-bottom: $distances-1;
+    display: flex;
 }

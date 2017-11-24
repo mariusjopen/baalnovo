@@ -7,6 +7,7 @@
 			Regie
 		</div>
 
+		<div class="box">
 		<?php
 		if( have_rows('mitwirkende') ):
 			while( have_rows('mitwirkende') ): the_row();
@@ -27,6 +28,7 @@
 			endwhile;
 		endif;
 		?>
+		</div>
 
 	</div>
 
@@ -36,6 +38,7 @@
 			Mit
 		</div>
 
+		<div class="box">
 		<?php
 		if( have_rows('mitwirkende') ):
 			while( have_rows('mitwirkende') ): the_row();
@@ -56,6 +59,7 @@
 			endwhile;
 		endif;
 		?>
+		</div>
 
 	</div>
 
