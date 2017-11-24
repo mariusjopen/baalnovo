@@ -3,6 +3,10 @@ html, * {
 	padding: 0px;
 }
 
+body {
+	font-size: $font-sizes-1;
+}
+
 img {
 	width: 100%;
 	height: auto;
