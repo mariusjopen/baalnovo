@@ -6,7 +6,7 @@
 		foreach( $images as $image ):
 		?>
 
-		<div>
+		<div class="post">
 			<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
 		</div>
 

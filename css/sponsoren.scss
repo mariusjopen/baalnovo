@@ -1,0 +1,17 @@
+.sponsoren {
+	@extend .elements;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sponsoren .post {
+  display: inline-block;
+  padding: $distances-2;
+}
+
+.sponsoren .post img {
+	height: 8vw;
+	width: auto;
+}

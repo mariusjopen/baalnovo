@@ -61,19 +61,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/css\/flexslider.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/css\/min\/flexslider.min.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/css\/fonts.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -109,6 +96,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/front-page.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/gallery.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/gallery.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -172,6 +172,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/min\/combine.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/flexslider.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/flexslider.min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -274,6 +284,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/mitwirkende.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/sponsoren.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/sponsoren.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -694,6 +717,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/js\/min\/flexslider.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/js\/min\/jquery.flexslider-min.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/js\/min\/jquery.flexslider-min.min.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
