@@ -1,0 +1,22 @@
+.insert-stuecke {
+	@extend .elements;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.vorschau-artikel {
+    width: calc(100% / 3 - 17.5px);
+		padding-bottom: $distances-3;
+}
+
+.insert-stuecke .image-poster {
+    border-top: none;
+    padding-top: 0px;
+    padding-bottom: $distances-2;
+}
+
+.insert-stuecke .inside {
+	width: 100%;
+}

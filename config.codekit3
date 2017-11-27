@@ -165,6 +165,32 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/insert-aktuelles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/insert-aktuelles.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/insert-stuecke.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/insert-stuecke.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/min\/combine.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -222,6 +248,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/min\/head.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/insert-stuecke.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/insert-stuecke.min.css",
 		"oF": 0,
 		"oS": 3
 		},

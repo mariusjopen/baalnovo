@@ -12,9 +12,9 @@
 				include(locate_template('inc/image-poster.php'));
 
 				include(locate_template('inc/title-link.php'));
-	
-				$kurzer_text = get_field('kurzer_text');
-				include(locate_template('inc/text-kurz.php'));
+
+				// $kurzer_text = get_field('kurzer_text');
+				// include(locate_template('inc/text-kurz.php'));
 				?>
 
 			</div>
