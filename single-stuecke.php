@@ -14,11 +14,10 @@ include(locate_template('inc/head.php'));
 
 <div class="content">
 
-	<div class="untertitel">
-		<p><?php the_field('untertitel'); ?></p>
-	</div>
-
 	<?php
+	$untertitel = get_field('untertitel');
+	include(locate_template('inc/untertitel.php'));
+
 	$kurzer_text = get_field('kurzer_text');
 	include(locate_template('inc/text-kurz.php'));
 

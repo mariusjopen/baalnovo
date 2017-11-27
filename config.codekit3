@@ -646,6 +646,13 @@
 		"oAP": "\/inc\/title-link.php",
 		"oF": 0
 		},
+	"\/inc\/untertitel.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/untertitel.php",
+		"oF": 0
+		},
 	"\/inc\/vorschau-aktuelles.php": {
 		"cB": 0,
 		"ft": 8192,

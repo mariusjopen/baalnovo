@@ -1,7 +1,8 @@
 <!-- START EVENTS THIS -->
-<div class="events-this">
-	<?php
-	if( have_rows($event) ):
+<?php if( have_rows($event) ): ?>
+	<div class="events-this">
+
+		<?php
 		while( have_rows($event) ): the_row();
 
 		$date_time = get_sub_field('date', false, false) . get_sub_field('zeit', false, false);
@@ -30,7 +31,8 @@
 
 		<?php
 		endwhile;
-	endif;
-	?>
-</div>
+		?>
+	</div>
+
+<?php endif; ?>
 <!-- END EVENTS THIS -->

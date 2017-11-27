@@ -1,25 +1,25 @@
 <!-- START ZITATE -->
-<div class="zitate">
 	<?php
 	if( have_rows('zitate') ):
 		while( have_rows('zitate') ): the_row();
 		?>
 
-		<div class="post-zitate">
+		<div class="zitate">
+			<div class="post-zitate">
 
-			<div class="zitate-detail">
-				<?php echo get_sub_field('zitat'); ?>
+				<div class="zitate-detail">
+					<?php echo get_sub_field('zitat'); ?>
+				</div>
+
+				<div class="zitate-quelle">
+					<?php echo get_sub_field('quelle'); ?>
+				</div>
+
 			</div>
-
-			<div class="zitate-quelle">
-				<?php echo get_sub_field('quelle'); ?>
-			</div>
-
 		</div>
 
 		<?php
 		endwhile;
 	endif;
 	?>
-</div>
 <!-- END ZITATE -->

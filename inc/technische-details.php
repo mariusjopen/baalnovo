@@ -1,9 +1,10 @@
 <!-- START TECHNISCHE DETAILS -->
-<div class="technische-details">
-	<?php
-	if( have_rows('technische_details') ):
-		while( have_rows('technische_details') ): the_row();
-		?>
+<?php
+if( have_rows('technische_details') ):
+	while( have_rows('technische_details') ): the_row();
+	?>
+
+	<div class="technische-details">
 
 		<div class="post-technische-details">
 
@@ -17,9 +18,10 @@
 
 		</div>
 
-		<?php
-		endwhile;
-	endif;
-	?>
-</div>
+	</div>
+
+	<?php
+	endwhile;
+endif;
+?>
 <!-- END TECHNISCHE DETAILS -->
