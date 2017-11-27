@@ -1,7 +1,11 @@
 <!-- START FLEX -->
+<?php
+if( have_rows($flex) ):
+?>
+
 <div class="flex">
-	<?php
-	if( have_rows($flex) ):
+
+		<?php
 		while ( have_rows($flex) ) : the_row();
 			if( get_row_layout() == 'group_text' ):
 
@@ -35,8 +39,12 @@
 
 			endif;
 		endwhile;
-	else :
-	endif;
-	?>
-</div>
+		?>
+
+	</div>
+
+<?php
+else :
+endif;
+?>
 <!-- END FLEX -->

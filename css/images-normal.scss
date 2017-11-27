@@ -1,0 +1,8 @@
+.image-normal {
+		@extend .elements;
+    text-align: -webkit-center;
+}
+
+.image-normal .inside {
+    width: 70%;
+}

@@ -152,7 +152,7 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/css\/images.scss": {
+	"\/css\/images-normal.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -160,7 +160,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/css\/min\/images.min.css",
+		"oAP": "\/css\/min\/images-normal.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -294,6 +294,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/mitwirkende.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/poster.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/poster.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1

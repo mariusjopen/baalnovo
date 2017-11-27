@@ -5,7 +5,7 @@
 		<div class="inside">
 	  <?php
 	  $size = '_768';
-	    echo wp_get_attachment_image( $image, $size );
+	  echo wp_get_attachment_image( $image, $size );
 	  ?>
 		</div>
 	</div>
