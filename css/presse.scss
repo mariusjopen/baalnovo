@@ -1,4 +1,4 @@
-.sponsoren {
+.presse {
 	@extend .elements;
   display: flex;
   align-items: baseline;
@@ -6,12 +6,16 @@
   justify-content: space-evenly;
 }
 
-.sponsoren .post {
+.presse .post {
   display: inline-block;
   padding: $distances-2;
 }
 
-.sponsoren .post img {
-	height: 6vw;
+.presse .post img {
+	height: 30vw;
 	width: auto;
+}
+
+.presse-datei {
+    text-align: center;
 }

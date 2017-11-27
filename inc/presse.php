@@ -7,7 +7,7 @@
 
 		<div class="download-datei">
 
-			<div class="presse-bild">
+			<div class="post">
 				<?php
 				$image = get_sub_field('bild');
 				$size = '_768';

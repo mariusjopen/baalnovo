@@ -1,7 +1,9 @@
 .footer {
 		@extend .wrapper-inside;
-		margin-bottom: $distances-3;
+		margin-bottom: $distances-2;
+		@extend .elements;
 }
+
 
 .footer .left {
     float: left;

@@ -175,6 +175,16 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/css\/min\/download.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/download.min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/min\/flexslider.min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -284,6 +294,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/css\/min\/mitwirkende.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/css\/presse.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/presse.min.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
