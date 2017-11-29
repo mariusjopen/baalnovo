@@ -1,9 +1,11 @@
 .text-kurz {
 		@extend .elements;
 		@extend .font-size-2;
+		@extend .both-side-indent-1;
 }
 
 .text-text {
 		@extend .elements;
 		@extend .font-size-2;
+		@extend .both-side-indent-1;
 }
