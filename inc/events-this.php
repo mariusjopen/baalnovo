@@ -11,7 +11,6 @@
 		if ($date_url == $date_time_mod) {
 		?>
 
-			<div class="ticket"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" >Ticket Kaufen</a></div>
 
 			<div class="post-event" data-date="<?php echo $date_time_mod ?>">
 				<!-- <a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>"> -->
@@ -24,6 +23,9 @@
 					</div>
 				<!-- </a> -->
 			</div>
+
+			<div class="ticket"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" >Ticket Kaufen</a></div>
+
 
 		<?php
 		};
