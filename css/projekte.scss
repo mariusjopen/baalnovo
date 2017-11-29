@@ -11,6 +11,7 @@
 	border: none;
 	padding-top: $distances-2;
 	@extend .font-size-1;
+	@extend .both-side-indent-0;
 }
 
 .vorschau-projekt img {

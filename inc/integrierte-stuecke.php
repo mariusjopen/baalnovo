@@ -9,7 +9,7 @@
 
 	</div>
 
-	<div class="integrierte-stuecke-events spielplan">
+	<div class="integrierte-stuecke-events ">
 		<?php
 		$post_objects = get_field('integrierte_stucke');
 		$dates = array();

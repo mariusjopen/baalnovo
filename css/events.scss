@@ -2,8 +2,19 @@
 		padding-bottom: 0px;
 }
 
+
+.home .events-all {
+    display: none;
+}
+
 .events-all {
 		@extend .elements;
+		padding-bottom: 0px;
+}
+
+.events-this .element-title {
+	border-top: 1px solid black;
+	padding-top: $distances-1;
 }
 
 .ticket {

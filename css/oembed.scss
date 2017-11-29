@@ -1,5 +1,10 @@
 .oembed {
 	@extend .elements;
+	    text-align: -webkit-center;
+}
+
+.oembed .inside {
+	width: 60%;
 }
 
 .group-embed {

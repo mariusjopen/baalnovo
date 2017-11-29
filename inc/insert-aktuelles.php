@@ -1,5 +1,11 @@
 <!-- START INSERT AKTUELLES -->
 <div class="insert-aktuelles">
+
+	<div class="element-title">
+		Verknüpfte News Beiträge
+	</div>
+
+
 	<?php
 	if( $post_objects ):
 		foreach( $post_objects as $post):
@@ -13,8 +19,8 @@
 
 				include(locate_template('inc/title-link.php'));
 
-				$kurzer_text = get_field('kurzer_text');
-				include(locate_template('inc/text-kurz.php'));
+				 $kurzer_text = get_field('kurzer_text');
+				 include(locate_template('inc/text-kurz.php'));
 				?>
 
 			</div>

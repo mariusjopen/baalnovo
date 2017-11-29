@@ -1,5 +1,12 @@
 <!-- START INSERT STUECKE -->
 <div class="insert-stuecke">
+
+	<div class="element-title">
+		Verknüpfte Stücke
+	</div>
+
+
+
 	<?php
 	if( $post_objects ):
 		foreach( $post_objects as $post):

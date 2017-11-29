@@ -18,7 +18,7 @@
 	border-top: 1px solid black;
 	@extend .elements;
 	border-bottom: 1px solid black;
-	margin-bottom: $distances-2;
+	margin-bottom: $distances-1;
 }
 
 .download .download-datei {
@@ -39,4 +39,8 @@ padding-right: 10px;
 .download .title-link a {
     text-align: center;
     width: 100%;
+}
+
+.download .element-title {
+    display: none;
 }

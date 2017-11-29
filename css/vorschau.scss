@@ -3,6 +3,11 @@
 	@extend .elements-wrap;
 }
 
+.vorschau-aktuelles .element-title {
+	border-bottom: 1px solid black;
+	margin-bottom: $distances-1;
+}
+
 .vorschau-aktuell {
     @extend .elements-wrap-inside;
 }
@@ -21,4 +26,9 @@
 	padding-top: $distances-2;
 	@extend .font-size-1;
 	@extend .both-side-indent-0;
+}
+
+
+.vorschau-aktuell .title-link {
+	text-align: center;
 }

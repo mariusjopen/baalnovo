@@ -5,6 +5,10 @@ if( have_rows($presse) ):
 
 	<div class="presse">
 
+		<div class="element-title">
+			Presse und Download Bereich
+		</div>
+
 		<?php
 		while ( have_rows($presse) ) : the_row();
 		?>

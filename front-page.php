@@ -26,8 +26,17 @@ include(locate_template('inc/head.php'));
       while ( $the_query->have_posts() ) : $the_query->the_post();
 
 				$events = 'events';
-				include(locate_template('inc/events-all.php'));
+				?>
 
+				<div class="events-start">
+
+					<?php
+					include(locate_template('inc/events-all-raw.php'));
+					?>
+
+				</div>
+
+			<?php
       endwhile;
     endif;
     wp_reset_query();

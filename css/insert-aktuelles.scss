@@ -2,3 +2,8 @@
     @extend .elements-wrap;
 		@extend .elements;
 }
+
+.insert-aktuelles .element-title {
+    border-bottom: black 1px solid;
+    margin-bottom: 20px;
+}

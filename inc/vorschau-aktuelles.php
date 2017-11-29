@@ -1,5 +1,11 @@
 <!-- START VORSCHAU AKTUELLES -->
 <div class="vorschau-aktuelles">
+
+	<div class="element-title">
+		Aktuelles
+	</div>
+
+
 	<?php
 	query_posts(array(
 		'post_type' => 'aktuelles',
@@ -17,8 +23,8 @@
 
 			include(locate_template('inc/title-link.php'));
 
-			$kurzer_text = get_field('kurzer_text');
-			include(locate_template('inc/text-kurz.php'));
+			 $kurzer_text = get_field('kurzer_text');
+			 include(locate_template('inc/text-kurz.php'));
 			?>
 
 		</div>

@@ -626,11 +626,25 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/inc\/DELETE_page-aktuelles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/DELETE_page-aktuelles.php",
+		"oF": 0
+		},
 	"\/inc\/download.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/download.php",
+		"oF": 0
+		},
+	"\/inc\/events-all-raw.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/events-all-raw.php",
 		"oF": 0
 		},
 	"\/inc\/events-all.php": {
@@ -729,13 +743,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/oembed.php",
-		"oF": 0
-		},
-	"\/inc\/page-aktuelles.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/page-aktuelles.php",
 		"oF": 0
 		},
 	"\/inc\/presse.php": {

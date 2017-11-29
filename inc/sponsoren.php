@@ -6,6 +6,10 @@ if( $images ):
 
 <div class="sponsoren">
 
+	<div class="element-title">
+		Wir danken unseren Sponsoren
+	</div>
+
 	<?php
 	foreach( $images as $image ):
 	?>
