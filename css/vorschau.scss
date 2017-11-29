@@ -1,21 +1,15 @@
 .vorschau-aktuelles {
 	@extend .elements;
+	@extend .elements-wrap;
 }
 
 .vorschau-aktuell {
-    width: calc(100% / 3 - 17.5px);
-}
-
-.vorschau-aktuelles {
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    @extend .elements-wrap-inside;
 }
 
 .image-vorschau img {
     object-fit: cover;
-    height: 20vw;
+    height: $image-height-1;
 }
 
 .image-vorschau {
@@ -25,4 +19,5 @@
 .vorschau-aktuell .text-kurz {
 	border: none;
 	padding-top: $distances-2;
+	@extend .font-size-1;
 }

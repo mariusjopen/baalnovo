@@ -4,18 +4,30 @@
   align-items: baseline;
   flex-wrap: wrap;
   justify-content: space-evenly;
+	margin-bottom: -$distances-3;
+}
+
+.presse .download-datei {
+  display: inline-block;
+	padding-bottom: $distances-3;
+
 }
 
 .presse .post {
-  display: inline-block;
-  padding: $distances-2;
+	padding-bottom: $distances-2;
+
 }
 
 .presse .post img {
-	height: 30vw;
+	height: $image-height-1;
 	width: auto;
 }
 
 .presse-datei {
     text-align: center;
+}
+
+
+.presse .title-link {
+	display: none;
 }

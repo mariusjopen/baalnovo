@@ -6,6 +6,7 @@ html, * {
 body {
 	font-family: 'Theinhardt-Light';
 	@extend .font-size-1;
+	overflow-x: hidden;
 }
 
 img {

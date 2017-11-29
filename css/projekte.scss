@@ -1,0 +1,19 @@
+.vorschau-projekte {
+	@extend .elements;
+  @extend .elements-wrap;
+}
+
+.vorschau-projekt {
+  @extend .elements-wrap-inside;
+}
+
+.vorschau-projekt .text-kurz {
+	border: none;
+	padding-top: $distances-2;
+	@extend .font-size-1;
+}
+
+.vorschau-projekt img {
+    object-fit: cover;
+    height: $image-height-1;
+}

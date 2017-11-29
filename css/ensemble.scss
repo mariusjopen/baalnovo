@@ -1,0 +1,39 @@
+.kategorie-name {
+	@extend .elements;
+	text-align: center;
+}
+
+.kategorie-content {
+	@extend .elements;
+	@extend .elements-wrap;
+  padding-bottom: 0px;
+	margin-bottom: -$distances-2;
+}
+
+.ensemble {
+	@extend .elements-wrap-inside;
+	padding-bottom: $distances-4;
+
+}
+
+.ensemble .image-normal {
+    text-align: initial;
+		border: none;
+		padding-top: 0px;
+}
+
+.ensemble .title-link {
+	text-align: center;
+}
+
+.ensemble .image-normal .inside {
+    width: 100%;
+    height: calc(100vw / 4 - 17.5px);
+		overflow: hidden;
+}
+
+.ensemble .image-normal img {
+    width: 100%;
+    height: 100%;
+		object-fit: cover;
+}

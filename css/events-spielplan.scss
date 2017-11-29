@@ -1,0 +1,74 @@
+
+.events-spielplan .image-poster {
+	text-align: initial;
+	border: none;
+  padding: 0px;
+	width: 20%;
+}
+
+.events-spielplan .image-poster .inside {
+    width: 100%;
+}
+
+.event-content {
+	width: calc(80% - 20px);
+	padding-left: 20px;
+}
+
+.events-spielplan .post-event .title {
+    width: 100%;
+    float: none;
+		@extend .font-size-2;
+		padding-bottom: $distances-1;
+}
+
+.events-spielplan .text-kurz {
+		@extend .font-size-1;
+		border: none;
+		padding: 0px;
+		width: calc(75% - 25px);
+		float: left;
+}
+
+.events-spielplan .tickets {
+		@extend .font-size-2;
+		width: 25%;
+    float: left;
+}
+
+.events-spielplan .row {
+		@extend .elements;
+		display: flex;
+		@extend .font-size-1;
+}
+
+.events-spielplan .kurz {
+	@extend .elements;
+}
+
+
+.events-spielplan .date {
+    float: left;
+    width: 25%;
+}
+
+.row-flex {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.events-spielplan .time {
+  width: calc(100% / 3 - 17.5px);
+}
+
+.events-spielplan .location {
+  width: calc(100% / 3 - 17.5px);
+}
+
+.events-spielplan .city {
+	width: calc(100% / 3 - 17.5px);
+	text-align: right;
+}

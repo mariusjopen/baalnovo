@@ -25,3 +25,16 @@
     padding-bottom: $distances-1;
     display: flex;
 }
+
+.elements-wrap {
+	display: flex;
+	// align-items: baseline;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.elements-wrap-inside {
+	width: calc(100vw / 5 - 17.5px);
+	padding-left: 10px;
+	padding-right: 10px;
+}

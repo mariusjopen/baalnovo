@@ -1,14 +1,10 @@
 .insert-stuecke {
 	@extend .elements;
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: space-between;
+	@extend .elements-wrap;
 }
 
 .vorschau-artikel {
-    width: calc(100% / 3 - 17.5px);
-		padding-bottom: $distances-3;
+    @extend .elements-wrap-inside;
 }
 
 .insert-stuecke .image-poster {
@@ -19,4 +15,8 @@
 
 .insert-stuecke .inside {
 	width: 100%;
+}
+
+.insert-stuecke .title-link {
+	text-align: center;
 }

@@ -2,7 +2,8 @@
 <div class="vorschau-aktuelles">
 	<?php
 	query_posts(array(
-		'post_type' => 'aktuelles'
+		'post_type' => 'aktuelles',
+		'posts_per_page' => 4,
 	) );
 
 	while (have_posts()) : the_post();

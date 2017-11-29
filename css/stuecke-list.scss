@@ -1,7 +1,40 @@
 .vorschau-stueck {
   display: none;
+	@extend .elements-wrap-inside;
+	padding-bottom: $distances-4;
+}
+
+.vorschau-stueck .image-poster {
+	border: none;
+	padding-top: 0px;
+}
+
+.vorschau-stueck .title-link {
+	text-align: center;
 }
 
 .filter-active {
   display: block;
+}
+
+.vorschau-stuecke {
+    @extend .elements-wrap;
+		@extend .elements;
+		padding-bottom: 0px;
+	 margin-bottom: -$distances-2;
+}
+
+.vorschau-stuecke .image-poster .inside {
+    width: 100%;
+}
+
+.filter {
+	@extend .elements;
+	@extend .elements-wrap;
+}
+
+.filter-item {
+	@extend .elements-wrap-inside;
+	cursor: pointer;
+	text-align: center;
 }

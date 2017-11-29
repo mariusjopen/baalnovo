@@ -9,6 +9,10 @@ if( have_rows($presse) ):
 		while ( have_rows($presse) ) : the_row();
 		?>
 
+		<?php
+		include(locate_template('inc/title-link.php'));
+		?>
+
 			<div class="download-datei">
 
 				<div class="post">
