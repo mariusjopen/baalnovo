@@ -50,8 +50,13 @@ include(locate_template('inc/head.php'));
 
 									<?php
 									$image = get_field('vorschau_bild');
-									include(locate_template('inc/image-normal.php'));
+									?>
 
+									<a href="<?php the_permalink() ?>">
+										<?php include(locate_template('inc/image-normal.php')); ?>
+									</a>
+
+									<?php
 									include(locate_template('inc/title-link.php'));
 									?>
 
