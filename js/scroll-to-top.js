@@ -1,6 +1,6 @@
 jQuery( document ).ready(function() {
 
-	jQuery(".middle").on("click", function() {
+	jQuery(".scroll").on("click", function() {
 		var windowheight = jQuery( window ).height();
 		var navigationheight = jQuery('.navigation').outerHeight();
 

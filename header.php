@@ -27,11 +27,11 @@
 				DE | FR
 			</div>
 
-			<div class="middle">
+			<div class="middle scroll">
 				<?php wp_title(''); ?>
 			</div>
 
-			<div class="middle start">
+			<div class="start scroll">
 				<?php echo get_bloginfo( 'name' ); ?>
 			</div>
 
