@@ -1,4 +1,8 @@
 <!-- START EVENTS ALL -->
+<?php
+if( have_rows($events) ):
+?>
+
 <div class="events-all">
 
 	<div class="element-title">
@@ -14,4 +18,8 @@
 		</div>
 
 </div>
+
+<?php
+endif;
+?>
 <!-- END EVENTS ALL -->
