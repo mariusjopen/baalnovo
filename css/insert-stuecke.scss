@@ -1,11 +1,14 @@
 .insert-stuecke {
 	@extend .elements;
 	@extend .elements-wrap;
+	margin-bottom: -$distances-4;
 }
 
 .vorschau-artikel {
     @extend .elements-wrap-inside;
+		padding-bottom: $distances-4 !important;
 }
+
 
 .insert-stuecke .image-poster {
     border-top: none;
