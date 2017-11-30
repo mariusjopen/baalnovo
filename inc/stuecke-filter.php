@@ -5,6 +5,20 @@
 		Alle
 	</div>
 
+	<div class="filter-item filter-get">
+		Aktuell
+	</div>
+
+	<div class="filter-item filter-get">
+		Archiv
+	</div>
+
+
+
+</div>
+
+<div class="filter">
+
 	<?php
 	$terms = get_terms( 'stuecke-category' );
 
@@ -23,6 +37,7 @@
 
 </div>
 
+
 <div class="vorschau-stuecke">
 	<?php
 	query_posts(array(
@@ -34,9 +49,18 @@
 	while (have_posts()) : the_post();
 
 	$terms = get_the_terms( $post->ID, 'stuecke-category' );
+	$active = get_field('archiv');
+
+	if( $active == 1 ):
+		$active_mod = "aktuell";
+	endif;
+
+	if( $active == "" ):
+		$active_mod = "archiv";
+	endif;
 	?>
 
-		<div class="vorschau-stueck <?php foreach( $terms as $term ) echo ' ' . $term->slug; ?>">
+		<div class="vorschau-stueck <?php echo $active_mod ?> <?php foreach( $terms as $term ) echo ' ' . $term->slug; ?>">
 
 			<?php
 			include(locate_template('inc/vorschau-stuecke.php'));
