@@ -3,7 +3,7 @@
 	<div class="integrierte-stuecke-poster">
 
 		<div class="element-title titel-2">
-			Stücke im Projekt
+			<?php the_field('stucke_im_projekt', 'option'); ?>
 		</div>
 
 		<?php

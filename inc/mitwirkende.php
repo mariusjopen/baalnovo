@@ -10,7 +10,7 @@
 			<div class="regie">
 
 				<div class="label">
-					Regie
+					<?php the_field('regie', 'option'); ?>
 				</div>
 
 				<div class="box">
@@ -50,7 +50,7 @@
 			<div class="mit">
 
 				<div class="label">
-					Mit
+					<?php the_field('mit', 'option'); ?>
 				</div>
 
 				<div class="box">

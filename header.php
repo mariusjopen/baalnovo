@@ -36,7 +36,7 @@
 			</div>
 
 			<div class="right">
-				Menü
+				<?php the_field('menu', 'option'); ?>
 			</div>
 
 		</div>

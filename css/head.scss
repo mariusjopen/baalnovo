@@ -9,6 +9,7 @@
 		height: 35px;
 		@extend .wrapper-inside;
 		padding-top: 15px;
+		text-transform: uppercase;
 }
 
 .left {
@@ -26,7 +27,6 @@
     text-align: center;
     width: calc(100% - 200px);
     float: left;
-		text-transform: uppercase;
 }
 
 .start {

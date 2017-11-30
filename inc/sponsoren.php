@@ -7,7 +7,7 @@ if( $images ):
 <div class="sponsoren">
 
 	<div class="element-title">
-		Wir danken unseren Sponsoren
+		<?php the_field('sponsoren', 'option'); ?>
 	</div>
 
 	<?php

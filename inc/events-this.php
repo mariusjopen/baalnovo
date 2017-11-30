@@ -8,7 +8,7 @@ if( have_rows($event) ):
 		<div class="events-this">
 
 			<div class="element-title">
-				Dieses Event
+				<?php the_field('dieses_event', 'option'); ?>
 			</div>
 
 			<?php
@@ -33,8 +33,8 @@ if( have_rows($event) ):
 					<!-- </a> -->
 				</div>
 
-				<div class="ticket"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" >Ticket Kaufen</a></div>
-
+				<div class="ticket"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" ><?php the_field('ticket_kaufen', 'option'); ?></a></div>
+<?php the_field('ticket_ausverkauft', 'option'); ?>
 
 			<?php
 			};
