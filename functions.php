@@ -10,6 +10,7 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 add_action( 'after_setup_theme', 'image_sizes' );
 
 add_action( 'init', 'register_my_menu' );
+add_action( 'widgets_init', 'arphabet_widgets_init' );
 
 add_action( 'init', 'create_post_type_ensemble' );
 add_action( 'init', 'create_post_type_category_ensemble' );
@@ -37,6 +38,20 @@ function add_theme_scripts(){
 function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
+
+// WIDGETS
+
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'languages',
+		'id'            => 'languages',
+		'before_widget' => '<div class="languages">',
+		'after_widget'  => '</div>',
+	) );
+
+}
+
 
 // ENSEMBLE
 

@@ -47,3 +47,13 @@
 .home .middle {
 	display: none;
 }
+
+.language-chooser-item-de::after {
+    content: "|";
+		padding-left: 5px;
+}
+
+.language-chooser-item {
+    float: left;
+		padding-right: 5px;
+}

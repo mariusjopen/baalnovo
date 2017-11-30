@@ -24,7 +24,7 @@
 		<div class="navigation">
 
 			<div class="left">
-				DE | FR
+				<?php dynamic_sidebar( 'languages' ); ?>
 			</div>
 
 			<div class="middle scroll">
