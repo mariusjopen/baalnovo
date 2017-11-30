@@ -18,14 +18,15 @@ include(locate_template('inc/head.php'));
 	$untertitel = get_field('untertitel');
 	include(locate_template('inc/untertitel.php'));
 
-	$kurzer_text = get_field('kurzer_text');
-	include(locate_template('inc/text-kurz.php'));
-
 	$event = 'events';
 	include(locate_template('inc/events-this.php'));
 
 	$image = get_field('poster');
 	include(locate_template('inc/image-poster.php'));
+
+	$kurzer_text = get_field('kurzer_text');
+	include(locate_template('inc/text-kurz.php'));
+
 
 	include(locate_template('inc/mitwirkende.php'));
 

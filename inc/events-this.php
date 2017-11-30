@@ -7,9 +7,7 @@ if( have_rows($event) ):
 
 		<div class="events-this">
 
-			<div class="element-title">
-				<?php the_field('dieses_event', 'option'); ?>
-			</div>
+
 
 			<?php
 			while( have_rows($event) ): the_row();
