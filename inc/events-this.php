@@ -33,8 +33,24 @@ if( have_rows($event) ):
 					<!-- </a> -->
 				</div>
 
-				<div class="ticket"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" ><?php the_field('ticket_kaufen', 'option'); ?></a></div>
-<?php the_field('ticket_ausverkauft', 'option'); ?>
+				<div class="ticket">
+
+					<?php
+					$ticket = get_sub_field('ausverkauft');
+
+					if( $ticket == "" ):
+					?>
+						<a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" ><?php the_field('ticket_kaufen', 'option'); ?></a>
+					<?php
+					endif;
+
+					if( $ticket == 1 ):
+						the_field('ticket_ausverkauft', 'option');
+					endif;
+					?>
+
+				</div>
+
 
 			<?php
 			};
