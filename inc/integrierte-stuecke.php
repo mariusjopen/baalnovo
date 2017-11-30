@@ -2,6 +2,10 @@
 <div class="integrierte-stuecke">
 	<div class="integrierte-stuecke-poster">
 
+		<div class="element-title titel-2">
+			Stücke im Projekt
+		</div>
+
 		<?php
 		$post_objects = get_field('integrierte_stucke');
 		include(locate_template('inc/insert-stuecke.php'));
@@ -42,7 +46,7 @@
 			while ( $the_query->have_posts() ) : $the_query->the_post();
 
 				$events = 'events';
-				include(locate_template('inc/events-all.php'));
+				include(locate_template('inc/events-all-raw.php'));
 
 			endwhile;
 		endif;

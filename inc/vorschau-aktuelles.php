@@ -2,7 +2,7 @@
 <div class="vorschau-aktuelles">
 
 	<div class="element-title">
-		Aktuelles
+		<?php the_field('aktuelles', 'option'); ?>
 	</div>
 
 

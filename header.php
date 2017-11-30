@@ -31,6 +31,10 @@
 				<?php wp_title(''); ?>
 			</div>
 
+			<div class="middle start">
+				<?php echo get_bloginfo( 'name' ); ?>
+			</div>
+
 			<div class="right">
 				Menü
 			</div>

@@ -2,7 +2,7 @@
 <div class="events-all">
 
 	<div class="element-title">
-		Alle Events von diesem Stück
+		<?php the_field('alle_events', 'option'); ?>
 	</div>
 
 	<div class="spielplan">

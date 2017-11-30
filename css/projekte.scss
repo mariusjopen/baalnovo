@@ -18,3 +18,13 @@
     object-fit: cover;
     height: $image-height-1;
 }
+
+.projekte-template-default .element-title {
+    display: none;
+}
+
+.projekte-template-default .titel-2 {
+	border-top: 1px solid black;
+display: block;
+padding-top: $distances-1;
+}

@@ -28,3 +28,11 @@
     float: left;
 		text-transform: uppercase;
 }
+
+.start {
+	display: none;
+}
+
+.home .start {
+	display: block;
+}

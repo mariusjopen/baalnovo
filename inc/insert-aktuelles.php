@@ -2,7 +2,7 @@
 <div class="insert-aktuelles">
 
 	<div class="element-title">
-		Verknüpfte News Beiträge
+		<?php the_field('verknuepft_aktuelles', 'option'); ?>
 	</div>
 
 

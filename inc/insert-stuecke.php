@@ -2,8 +2,9 @@
 <div class="insert-stuecke">
 
 	<div class="element-title">
-		Verknüpfte Stücke
+		<?php the_field('verknuepft_stuecke', 'option'); ?>
 	</div>
+
 
 
 
