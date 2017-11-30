@@ -1,1 +1,1 @@
-// @codekit-prepend "date-sorting.js", "stueck-filter.js" , "flexslider.js";
+// @codekit-prepend "date-sorting.js", "scroll-to-top.js", "stueck-filter.js" , "flexslider.js";
