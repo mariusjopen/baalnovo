@@ -1,7 +1,7 @@
 <div class="footer">
 
 	<div class="left">
-		Design by THE PEOPLE°
+		Design & Code: <a href="http://www.mariusjopen.com" target="_blank">Marius Jopen</a> <a href="http://www.mariusjopen.com" target="_blank">THE PEOPLE°</a>
 	</div>
 
 	<div class="right">

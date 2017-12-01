@@ -2,16 +2,17 @@
 		@extend .wrapper-inside;
 		margin-bottom: $distances-2;
 		@extend .elements;
+		padding-top: $distances-2;
 }
 
 
 .footer .left {
     float: left;
-    width: 200px;
+    width: 50%;
 }
 
 .footer .right {
     float: right;
-    width: 200px;
+		width: 50%;
     text-align: right;
 }

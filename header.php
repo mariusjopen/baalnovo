@@ -32,7 +32,7 @@
 			</div>
 
 			<div class="start scroll">
-				<?php echo get_bloginfo( 'name' ); ?>
+				<?php echo get_bloginfo( 'name' ); ?> - <?php echo get_bloginfo( 'description' ); ?>
 			</div>
 
 			<div class="right">
