@@ -1,0 +1,62 @@
+.menu {
+	opacity: 0;
+	width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: white;
+  top: 0px;
+  left: 0px;
+	padding: $distances-3;
+  z-index: 10;
+	transition: 0.5s ease;
+	pointer-events: none;
+	column-count: 3;
+}
+
+.menu-active .menu {
+pointer-events: all;
+	opacity: 1;
+
+}
+
+.menu .menu-item  {
+	@extend .font-size-2;
+	margin-bottom: $distances-3;
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.menu .sub-menu .menu-item {
+	@extend .font-size-1;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	padding-bottom: 2px;
+}
+
+.menu .navigation {
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 10;
+		width: calc(100% - 60px);
+}
+
+.menu-active {
+	overflow: hidden;
+}
+
+.menu-button {
+	cursor: pointer;
+}
+
+// UMBRUCH
+.menu-item-type-custom {
+visibility: hidden;
+}
+
+// PROJEKTE – IMMER NEGATIV VON UMBRUCH
+.menu-item-type-custom.menu-item-has-children,
+.sub-menu .menu-item-type-custom {
+		height: auto;
+		visibility: visible;
+}

@@ -18,25 +18,16 @@
 	include(locate_template('inc/image-main.php'));
 	?>
 
+	<div class="menu">
+		<?php	wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+
+		<?php
+		include(locate_template('inc/navigation.php'));
+		?>
+	</div>
+
 	<div class="wrapper">
 
-
-		<div class="navigation">
-
-			<div class="left">
-				<?php dynamic_sidebar( 'languages' ); ?>
-			</div>
-
-			<div class="middle scroll">
-				<?php wp_title(''); ?>
-			</div>
-
-			<div class="start scroll">
-				<?php echo get_bloginfo( 'name' ); ?> - <?php echo get_bloginfo( 'description' ); ?>
-			</div>
-
-			<div class="right">
-				<?php the_field('menu', 'option'); ?>
-			</div>
-
-		</div>
+	<?php
+	include(locate_template('inc/navigation.php'));
+	?>

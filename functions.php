@@ -10,7 +10,9 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 add_action( 'after_setup_theme', 'image_sizes' );
 
 add_action( 'init', 'register_my_menu' );
+add_filter( 'wp_get_nav_menu_items', 'cpt_archive_menu_filter', 10, 3 );
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 
 add_action( 'init', 'create_post_type_ensemble' );
 add_action( 'init', 'create_post_type_category_ensemble' );
@@ -172,6 +174,35 @@ if( function_exists('acf_add_options_page') ) {
 }
 
 
+// POSTS IN MENU
+
+/* take care of the urls */
+
+function cpt_archive_menu_filter( $items, $menu, $args ) {
+  /* alter the URL for cpt-archive objects */
+
+  $menu_order = count($items); /* Offset menu order */
+
+  $child_items = array();
+  foreach ( $items as &$item ) {
+    if ( $item->title != '##projekte##' ) continue;
+    $item->url = get_permalink( get_page_by_path( 'projekte-liste' ) );
+    $item->title = 'Projekte';
+
+    foreach ( get_posts( 'post_type=projekte&numberposts=-1' ) as $post ) {
+      $post->menu_item_parent = $item->ID;
+      $post->post_type = 'nav_menu_item';
+      $post->object = 'custom';
+      $post->type = 'custom';
+      $post->menu_order = ++$menu_order;
+      $post->title = $post->post_title;
+      $post->url = get_permalink( $post->ID );
+      /* add children */
+      $child_items []= $post;
+    }
+  }
+  return array_merge( $items, $child_items );
+}
 
 
 ?>
