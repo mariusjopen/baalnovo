@@ -2,7 +2,14 @@ jQuery( document ).ready(function() {
 
 	jQuery(".scroll").on("click", function() {
 		var windowheight = jQuery( window ).height();
-		var navigationheight = jQuery('.navigation').outerHeight();
+
+		if (jQuery(window).width() < 700) {
+			var navigationheight = jQuery('.navigation.mobile').outerHeight();
+		}
+
+		if (jQuery(window).width() > 700) {
+			var navigationheight = jQuery('.navigation.desktop').outerHeight();
+		}
 
 		var scrollheight = windowheight - navigationheight;
 
