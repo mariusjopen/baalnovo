@@ -56,9 +56,12 @@
 		cursor: pointer;
 }
 
-.mobile.middle {
+.mobile .middle {
     width: 100%;
     float: none;
+		border-bottom: 1px solid black;
+    padding-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 .start {
