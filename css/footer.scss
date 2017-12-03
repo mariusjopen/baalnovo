@@ -3,6 +3,10 @@
 		margin-bottom: $distances-2;
 		@extend .elements;
 		padding-top: $distances-2;
+
+		@media screen and (max-width: $break-small) {
+			padding-bottom: 0px;
+		}
 }
 
 
@@ -26,5 +30,6 @@
 			float: none;
 	    width: 100%;
 			text-align: center;
+			padding-top: 3px;
 		}
 }
