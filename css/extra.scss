@@ -1,0 +1,5 @@
+.extra {
+		@extend .elements;
+		text-align: center;
+		@extend .both-side-indent-1;
+}

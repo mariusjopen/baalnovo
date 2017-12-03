@@ -49,6 +49,14 @@ if( have_rows($event) ):
 
 				</div>
 
+				<div class="extra">
+
+					<?php
+					the_sub_field('extra_informationen');
+					?>
+
+				</div>
+
 
 			<?php
 			};
