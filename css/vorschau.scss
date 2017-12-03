@@ -14,7 +14,7 @@
 
 .image-vorschau img {
     object-fit: cover;
-    height: $image-height-1;
+		@extend .image-vorschau-height;
 }
 
 .image-vorschau {

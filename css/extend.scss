@@ -79,3 +79,15 @@
 		padding-right: 0px;
 	}
 }
+
+.image-vorschau-height {
+	height: $image-height-1;
+
+	@media screen and (max-width: $break-middle) {
+		height: 20vw;
+	}
+
+	@media screen and (max-width: $break-small) {
+		height: 40vw;
+	}
+}
