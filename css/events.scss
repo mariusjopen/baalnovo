@@ -26,6 +26,10 @@
 
 .post-event {
     @extend .table;
+
+		@media screen and (max-width: $break-small) {
+			display: block;
+		}
 }
 
 .post-event a {
