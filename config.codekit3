@@ -1008,6 +1008,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/show-navigation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/js\/min\/show-navigation.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/stueck-filter.js": {
 		"ft": 64,
 		"ma": 0,
