@@ -9,10 +9,22 @@
 .footer .left {
     float: left;
     width: 50%;
+
+		@media screen and (max-width: $break-small) {
+			float: none;
+	    width: 100%;
+			text-align: center;
+		}
 }
 
 .footer .right {
     float: right;
 		width: 50%;
     text-align: right;
+
+		@media screen and (max-width: $break-small) {
+			float: none;
+	    width: 100%;
+			text-align: center;
+		}
 }
