@@ -21,6 +21,10 @@
 .presse .post img {
 	height: $image-height-1;
 	width: auto;
+
+	@media screen and (max-width: $break-small) {
+		height: 20vw;
+	}
 }
 
 .presse-datei {

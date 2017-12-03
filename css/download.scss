@@ -22,9 +22,17 @@
 }
 
 .download .download-datei {
-width: calc(100vw / 7 - 17.5px);
-padding-left: 10px;
-padding-right: 10px;
+	width: calc(100vw / 7 - 17.5px);
+	padding-left: 10px;
+	padding-right: 10px;
+
+	@media screen and (max-width: $break-middle) {
+		width: calc(100vw / 5 - 17.5px);
+	}
+
+	@media screen and (max-width: $break-small) {
+		width: calc(100vw / 3 - 17.5px);
+	}
 }
 
 .download .post img {
