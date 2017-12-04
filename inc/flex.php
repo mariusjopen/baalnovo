@@ -17,6 +17,11 @@ if( have_rows($flex) ):
 				$image = get_sub_field('bild');
 				include(locate_template('inc/image-normal.php'));
 
+			elseif( get_row_layout() == 'group_uberschrift' ):
+
+				$uberschrift = get_sub_field('uberschrift');
+				include(locate_template('inc/uberschrift.php'));
+
 			elseif( get_row_layout() == 'group_galerie' ):
 
 				$images = get_sub_field('galerie');

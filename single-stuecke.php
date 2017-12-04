@@ -40,6 +40,9 @@ include(locate_template('inc/head.php'));
 	$images = get_field('gallerie');
 	include(locate_template('inc/image-gallery.php'));
 
+	$flex = 'inhalt';
+	include(locate_template('inc/flex.php'));
+
 	$events = 'events';
 	include(locate_template('inc/events-all.php'));
 
