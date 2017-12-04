@@ -15,6 +15,9 @@ include(locate_template('inc/head.php'));
 	$flex = 'inhalt';
 	include(locate_template('inc/flex.php'));
 
+	$images = get_field('sponsoren');
+	include(locate_template('inc/sponsoren.php'));
+
 	$presse = 'presse';
 	include(locate_template('inc/presse.php'));
 	?>
