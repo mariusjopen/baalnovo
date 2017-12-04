@@ -37,4 +37,16 @@
 	@extend .elements-wrap-inside;
 	cursor: pointer;
 	text-align: center;
+
+	@media screen and (max-width: $break-middle) {
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }
