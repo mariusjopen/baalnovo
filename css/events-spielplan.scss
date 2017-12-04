@@ -4,6 +4,10 @@
 	border: none;
   padding: 0px;
 	width: 20%;
+
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+	}
 }
 
 .events-spielplan .image-poster .inside {
@@ -13,6 +17,12 @@
 .event-content {
 	width: calc(80% - 20px);
 	padding-left: 20px;
+
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+		padding-left: 0px;
+		margin-top: $distances-2;
+	}
 }
 
 .events-spielplan .post-event .title {
@@ -28,18 +38,38 @@
 		padding: 0px;
 		width: calc(75% - 25px);
 		float: left;
+
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+			float: none;
+			border-top: 1px solid black;
+			padding-top: $distances-1;
+		}
 }
 
 .events-spielplan .tickets {
 		@extend .font-size-2;
 		width: 25%;
     float: left;
+
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+			float: none;
+			text-align: center;
+			padding-bottom: $distances-1;
+		}
 }
 
 .events-spielplan .row {
 		@extend .elements;
 		display: flex;
 		@extend .font-size-1;
+
+		@media screen and (max-width: $break-small) {
+			display: block;
+			font-size: 20px;
+			line-height: 23px;
+		}
 }
 
 .events-spielplan .kurz {
@@ -50,6 +80,13 @@
 .events-spielplan .date {
     float: left;
     width: 25%;
+
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+			float: none;
+			text-align: center;
+			padding-bottom: 5px;
+		}
 }
 
 .row-flex {
@@ -58,17 +95,43 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 75%;
+
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+			float: none;
+			display: block;
+		}
 }
 
 .events-spielplan .time {
   width: calc(100% / 3 - 17.5px);
+
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding-bottom: 5px;
+	}
 }
 
 .events-spielplan .location {
   width: calc(100% / 3 - 17.5px);
+
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding-bottom: 5px;
+	}
 }
 
 .events-spielplan .city {
 	width: calc(100% / 3 - 17.5px);
 	text-align: right;
+
+	@media screen and (max-width: $break-small) {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
 }
