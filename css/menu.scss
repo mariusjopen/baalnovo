@@ -11,12 +11,24 @@
 	transition: 0.5s ease;
 	pointer-events: none;
 	column-count: 3;
+
+	@media screen and (max-width: $break-small) {
+		column-count: 2;
+	}
 }
 
 .menu-active .menu {
-pointer-events: all;
+	pointer-events: all;
 	opacity: 1;
 
+}
+
+.menu .sub-menu {
+  padding-top: 2px;
+
+	@media screen and (max-width: $break-small) {
+		padding-top: 4px;
+	}
 }
 
 .menu .menu-item  {
