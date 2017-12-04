@@ -26,6 +26,10 @@ add_action( 'init', 'get_id_by_slug' );
 remove_action( 'wp_head', 'wp_generator' );
 add_filter( 'show_admin_bar', '__return_false' );
 
+add_filter( 'user_has_cap', 'pxlcore_give_edit_theme_options' );
+add_action('admin_head', 'hide_menu');
+
+
 // JAVACSRIPT, CSS
 
 function add_theme_scripts(){
@@ -204,7 +208,7 @@ function cpt_archive_menu_filter( $items, $menu, $args ) {
   return array_merge( $items, $child_items );
 }
 
-
+// GET CAPTIONS FOR IMAGES
 
 function wp_get_attachment( $attachment_id ) {
 
@@ -218,6 +222,33 @@ function wp_get_attachment( $attachment_id ) {
 		'title' => $attachment->post_title
 	);
 }
+
+
+// EDITOR EDIT MENU
+
+function pxlcore_give_edit_theme_options( $caps ) {
+	if( ! empty( $caps[ 'edit_pages' ] ) ) {
+		$caps[ 'edit_theme_options' ] = true;
+
+	}
+	return $caps;
+}
+
+
+// EDITOR HIDE PAGES
+
+function hide_menu() {
+    remove_submenu_page( 'themes.php', 'themes.php' );
+    remove_submenu_page( 'themes.php', 'widgets.php' );
+		remove_menu_page( 'edit-comments.php' );
+		remove_menu_page( 'edit.php' );
+		remove_menu_page( 'profile.php' );
+		remove_menu_page( 'tools.php' );
+
+    global $submenu;
+    unset($submenu['themes.php'][6]);
+}
+
 
 
 ?>
