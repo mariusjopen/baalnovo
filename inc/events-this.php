@@ -31,41 +31,72 @@ if( have_rows($event) ):
 					<!-- </a> -->
 				</div>
 
-				<div class="ticket">
+
 
 					<?php
 					$ticket = get_sub_field('ausverkauft');
 
 					if( $ticket == "" ):
 					?>
-						<a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" ><?php the_field('ticket_kaufen', 'option'); ?></a>
+
+						<?php
+						$ticket_link = get_sub_field('ticket_link');
+						if( $ticket_link ):
+						?>
+
+							<div class="ticket">
+								<a href="<?php echo $ticket_link ?>" target="_blank" ><?php the_field('ticket_kaufen', 'option'); ?></a>
+							</div>
+
+						<?php
+						endif;
+						?>
+
+						<?php
+						$ticket_email = get_sub_field('ticket_email');
+						if( $ticket_email ):
+						?>
+
+						<div class="ticket">
+							<a href="mailto:<?php echo $ticket_email  ?>" ><?php the_field('ticket_kaufen', 'option'); ?></a>
+						</div>
+
+						<?php
+						endif;
+						?>
+
 					<?php
 					endif;
 
 					if( $ticket == 1 ):
-						the_field('ticket_ausverkauft', 'option');
+					?>
+
+					<div class="ticket">
+						<?php the_field('ticket_ausverkauft', 'option'); ?>
+					</div>
+					
+					<?php
 					endif;
 					?>
 
-				</div>
 
-				<div class="extra">
 
 					<?php
-					the_sub_field('extra_informationen');
+					$extra = get_sub_field('extra_informationen');
+					if( $extra ):
 					?>
 
-				</div>
+						<div class="extra">
 
+							<?php echo $extra; ?>
 
-			<?php
+						</div>
+
+					<?php
+					endif;
+
 			};
 
-
-
-			?>
-
-			<?php
 			endwhile;
 			?>
 		</div>
