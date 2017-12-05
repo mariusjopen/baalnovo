@@ -1,9 +1,5 @@
 <?php get_header(); ?>
 
-<?php
-include(locate_template('inc/head.php'));
-?>
-
 <div class="content">
 
   <div class="spielplan">

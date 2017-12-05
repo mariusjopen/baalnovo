@@ -256,6 +256,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/css\/main-video.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/main-video.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/menu.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -396,6 +409,16 @@
 		"ma": 0,
 		"oA": 2,
 		"oAP": "\/css\/min\/integrierte-stuecke.min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/css\/min\/main-video.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/main-video.min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -921,6 +944,13 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/inc\/untertitel.php",
+		"oF": 0
+		},
+	"\/inc\/video-main.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/video-main.php",
 		"oF": 0
 		},
 	"\/inc\/vorschau-aktuelles.php": {
