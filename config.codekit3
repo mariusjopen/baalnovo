@@ -9,6 +9,34 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/archive-aktuelles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-aktuelles.php",
+		"oF": 0
+		},
+	"\/archive-ensemble.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-ensemble.php",
+		"oF": 0
+		},
+	"\/archive-projekte.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-projekte.php",
+		"oF": 0
+		},
+	"\/archive-stuecke.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive-stuecke.php",
+		"oF": 0
+		},
 	"\/css\/caption.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -806,6 +834,13 @@
 		"oAP": "\/inc\/flex.php",
 		"oF": 0
 		},
+	"\/inc\/header-wrapper.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/header-wrapper.php",
+		"oF": 0
+		},
 	"\/inc\/image-gallery.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1131,13 +1166,6 @@
 		"sC": 3,
 		"tS": 0
 		},
-	"\/page-aktuelles.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-aktuelles.php",
-		"oF": 0
-		},
 	"\/page-download.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1145,32 +1173,11 @@
 		"oAP": "\/page-download.php",
 		"oF": 0
 		},
-	"\/page-ensemble.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-ensemble.php",
-		"oF": 0
-		},
-	"\/page-projekte.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-projekte.php",
-		"oF": 0
-		},
 	"\/page-spielplan.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page-spielplan.php",
-		"oF": 0
-		},
-	"\/page-stuecke.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/page-stuecke.php",
 		"oF": 0
 		},
 	"\/page.php": {

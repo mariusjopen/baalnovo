@@ -13,24 +13,4 @@
 
 	<body <?php body_class(); ?> >
 
-	<?php
-	$image = get_field('vorschau_bild');
-	include(locate_template('inc/image-main.php'));
-
-	$video = get_field('vorschau_video');
-	include(locate_template('inc/video-main.php'));
-	?>
-
-	<div class="menu">
-		<?php	wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-
-		<?php
-		include(locate_template('inc/navigation.php'));
-		?>
-	</div>
-
-	<div class="wrapper">
-
-	<?php
-	include(locate_template('inc/navigation.php'));
-	?>
+		

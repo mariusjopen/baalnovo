@@ -3,10 +3,12 @@
 <?php
 include(locate_template('inc/head.php'));
 
-$image = get_field('vorschau_bild');
+$id = get_id_by_slug('stuecke-liste');
+
+$image = get_field('vorschau_bild', $id);
 include(locate_template('inc/image-main.php'));
 
-$video = get_field('vorschau_video');
+$video = get_field('vorschau_video', $id);
 include(locate_template('inc/video-main.php'));
 
 include(locate_template('inc/header-wrapper.php'));
@@ -15,11 +17,7 @@ include(locate_template('inc/header-wrapper.php'));
 <div class="content">
 
 	<?php
-	$kurzer_text = get_field('kurzer_text');
-	include(locate_template('inc/text-kurz.php'));
-
-	$flex = 'inhalt';
-	include(locate_template('inc/flex.php'));
+	include(locate_template('inc/stuecke-filter.php'));
 	?>
 
 </div>
