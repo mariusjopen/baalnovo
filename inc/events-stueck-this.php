@@ -25,10 +25,45 @@ if( have_rows($event) ):
 						<div class="date-time">
 							<?php echo get_sub_field('date'); ?> | <?php echo get_sub_field('zeit'); ?>
 						</div>
-						<div class="location-city">
-							<div class="location"><?php echo get_sub_field('ort'); ?>, <?php echo get_sub_field('stadt'); ?></div>
+
+						<div class="lokation">
+							<?php
+							$post_object = get_sub_field('lokation');
+							if( $post_object ) :
+
+								$post = $post_object;
+								setup_postdata($post);
+								?>
+
+									<?php the_title(); ?>,
+									<?php echo get_field('stadt'); ?>
+
+								<?php
+								  wp_reset_postdata( $post );
+							endif;
+							?>
 						</div>
 					<!-- </a> -->
+				</div>
+
+				<div class="adresse">
+					<?php
+					$post_object = get_sub_field('lokation');
+					if( $post_object ) :
+
+						$post = $post_object;
+						setup_postdata($post);
+						?>
+
+								<?php the_title(); ?>,
+								<?php echo get_field('strasse'); ?> <?php echo get_field('hausnummer'); ?>,
+								<?php echo get_field('stadt'); ?>,
+								<?php echo get_field('land'); ?>
+
+						<?php
+							wp_reset_postdata( $post );
+					endif;
+					?>
 				</div>
 
 
@@ -74,7 +109,7 @@ if( have_rows($event) ):
 					<div class="ticket">
 						<?php the_field('ticket_ausverkauft', 'option'); ?>
 					</div>
-					
+
 					<?php
 					endif;
 					?>

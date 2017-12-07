@@ -20,6 +20,7 @@ add_action( 'init', 'create_post_type_stuecke' );
 add_action( 'init', 'create_post_type_category_stuecke' );
 add_action( 'init', 'create_post_type_aktuelles' );
 add_action( 'init', 'create_post_type_projekte' );
+add_action( 'init', 'create_post_type_locations' );
 
 add_action( 'init', 'get_id_by_slug' );
 
@@ -145,6 +146,21 @@ function create_post_type_projekte() {
   );
 }
 
+// LOCATIONS
+
+function create_post_type_locations() {
+  register_post_type( 'locations',
+    array(
+      'labels' => array(
+        'name' => __( 'Lokations' ),
+        'singular_name' => __( 'Lokation' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
+
 // RESPONSIVE IMAGES
 
 function image_sizes(){
@@ -190,7 +206,7 @@ function cpt_archive_menu_filter( $items, $menu, $args ) {
   $child_items = array();
   foreach ( $items as &$item ) {
     if ( $item->title != '##projekte##' ) continue;
-		
+
     $item->url = get_post_type_archive_link( 'projekte' );
     $item->title = 'Projekte';
 

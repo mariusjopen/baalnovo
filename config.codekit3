@@ -37,6 +37,19 @@
 		"oAP": "\/archive-stuecke.php",
 		"oF": 0
 		},
+	"\/css\/adresse.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/min\/adresse.min.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/css\/caption.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -309,6 +322,16 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/css\/min\/adresse.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/css\/min\/adresse.min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/css\/min\/caption.min.css": {
 		"aP": 1,
@@ -757,18 +780,11 @@
 		"oAP": "\/inc\/download.php",
 		"oF": 0
 		},
-	"\/inc\/events-all-raw.php": {
+	"\/inc\/events-frontpage.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/events-all-raw.php",
-		"oF": 0
-		},
-	"\/inc\/events-all.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/events-all.php",
+		"oAP": "\/inc\/events-frontpage.php",
 		"oF": 0
 		},
 	"\/inc\/events-spielplan.php": {
@@ -778,11 +794,18 @@
 		"oAP": "\/inc\/events-spielplan.php",
 		"oF": 0
 		},
-	"\/inc\/events-this.php": {
+	"\/inc\/events-stueck-all.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/inc\/events-this.php",
+		"oAP": "\/inc\/events-stueck-all.php",
+		"oF": 0
+		},
+	"\/inc\/events-stueck-this.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/inc\/events-stueck-this.php",
 		"oF": 0
 		},
 	"\/inc\/flex.php": {

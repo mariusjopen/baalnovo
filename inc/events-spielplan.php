@@ -45,8 +45,16 @@
 								<div class="date"><?php echo get_sub_field('date'); ?></div>
 								<div class="row-flex">
 									<div class="time"><?php echo get_sub_field('zeit'); ?></div>
-									<div class="location"><?php echo get_sub_field('ort'); ?></div>
-									<div class="city"><?php echo get_sub_field('stadt'); ?></div>
+
+									<div class="lokation">
+										<?php
+										$lokation_array = get_sub_field('lokation');
+										?>
+
+										<?php echo get_the_title($lokation_array); ?>,
+										<?php echo get_field('stadt', $lokation_array->ID); ?>
+									</div>
+									
 								</div>
 							</div>
 

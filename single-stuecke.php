@@ -27,7 +27,7 @@ include(locate_template('inc/header-wrapper.php'));
 	include(locate_template('inc/untertitel.php'));
 
 	$event = 'events';
-	include(locate_template('inc/events-this.php'));
+	include(locate_template('inc/events-stueck-this.php'));
 
 	$image = get_field('poster');
 	include(locate_template('inc/image-poster.php'));
@@ -52,7 +52,7 @@ include(locate_template('inc/header-wrapper.php'));
 	include(locate_template('inc/flex.php'));
 
 	$events = 'events';
-	include(locate_template('inc/events-all.php'));
+	include(locate_template('inc/events-stueck-all.php'));
 
 	$images = get_field('sponsoren');
 	include(locate_template('inc/sponsoren.php'));
