@@ -35,9 +35,6 @@ include(locate_template('inc/header-wrapper.php'));
 	$kurzer_text = get_field('kurzer_text');
 	include(locate_template('inc/text-kurz.php'));
 
-
-	include(locate_template('inc/mitwirkende.php'));
-
 	include(locate_template('inc/technische-details.php'));
 
 	$text_text = get_field('langer_text');
