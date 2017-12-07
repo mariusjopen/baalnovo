@@ -190,7 +190,8 @@ function cpt_archive_menu_filter( $items, $menu, $args ) {
   $child_items = array();
   foreach ( $items as &$item ) {
     if ( $item->title != '##projekte##' ) continue;
-    $item->url = get_permalink( get_page_by_path( 'projekte-liste' ) );
+		
+    $item->url = get_post_type_archive_link( 'projekte' );
     $item->title = 'Projekte';
 
     foreach ( get_posts( 'post_type=projekte&numberposts=-1' ) as $post ) {
