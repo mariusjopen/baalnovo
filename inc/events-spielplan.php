@@ -31,10 +31,12 @@
 
 					<div class="post-event shuffle" data-date="<?php echo $date_time_mod ?>">
 
-						<?php
-						$image = get_field('poster');
-						include(locate_template('inc/image-poster.php'));
-						?>
+						<a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
+							<?php
+							$image = get_field('poster');
+							include(locate_template('inc/image-poster.php'));
+							?>
+						</a>
 
 						<div class="event-content">
 							<a href="<?php the_permalink() ?>?date_time=<?php echo $date_time_mod ?>">
@@ -54,7 +56,7 @@
 										<?php echo get_the_title($lokation_array); ?>,
 										<?php echo get_field('stadt', $lokation_array->ID); ?>
 									</div>
-									
+
 								</div>
 							</div>
 

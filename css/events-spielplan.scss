@@ -3,15 +3,18 @@
 	text-align: initial;
 	border: none;
   padding: 0px;
-	width: 20%;
 
 	@media screen and (max-width: $break-small) {
 		width: 100%;
 	}
 }
 
-.events-spielplan .image-poster .inside {
+.events-spielplan a .image-poster .inside {
     width: 100%;
+}
+
+.events-spielplan .post-event a {
+	width: 20%;
 }
 
 .event-content {
@@ -38,6 +41,7 @@
 		padding: 0px;
 		width: calc(75% - 25px);
 		float: left;
+		text-align: left;
 
 		@media screen and (max-width: $break-small) {
 			width: 100%;
