@@ -6,9 +6,20 @@
 .image-normal .inside {
     width: 70%;
 		height: 40vw;
+
+		@media screen and (max-width: $break-small) {
+			width: auto;
+			height: auto;
+		}
 }
 
 .image-normal img {
     width: auto;
     height: 100%;
+
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+			padding: 0px;
+			height: auto;
+		}
 }

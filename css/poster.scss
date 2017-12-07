@@ -5,4 +5,9 @@
 
 .image-poster .inside {
     width: 40%;
+
+		@media screen and (max-width: $break-small) {
+			width: 100%;
+			padding: 0px;
+		}
 }
