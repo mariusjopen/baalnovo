@@ -8,9 +8,8 @@
 		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
     <!-- <link rel="stylesheet"  href="<?php echo get_template_directory_uri(); ?>/style.css" >
 		<link rel="stylesheet"  href="<?php echo get_template_directory_uri(); ?>/css/main.css" > -->
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.png" />
 		<?php wp_head(); ?>
 	</head>
 
 	<body <?php body_class(); ?> >
-
-		
