@@ -61,7 +61,51 @@
 							</div>
 
 							<div class="kurz">
-								<div class="tickets"><a href="<?php echo get_sub_field('ticket'); ?>" target="_blank" >Ticket</a></div>
+								<?php
+								$ticket = get_sub_field('ausverkauft');
+
+								if( $ticket == "" ):
+								?>
+
+									<?php
+									$ticket_link = get_sub_field('ticket_link');
+									if( $ticket_link ):
+									?>
+
+										<div class="tickets">
+											<a href="<?php echo $ticket_link ?>" target="_blank" ><?php the_field('ticket_kaufen', 'option'); ?></a>
+										</div>
+
+									<?php
+									endif;
+									?>
+
+									<?php
+									$ticket_email = get_sub_field('ticket_email');
+									if( $ticket_email ):
+									?>
+
+									<div class="tickets">
+										<a href="mailto:<?php echo $ticket_email  ?>" ><?php the_field('ticket_kaufen', 'option'); ?></a>
+									</div>
+
+									<?php
+									endif;
+									?>
+
+								<?php
+								endif;
+
+								if( $ticket == 1 ):
+								?>
+
+								<div class="tickets">
+									<?php the_field('ticket_ausverkauft', 'option'); ?>
+								</div>
+
+								<?php
+								endif;
+								?>
 
 								<?php
 								$kurzer_text = get_field('kurzer_text');
