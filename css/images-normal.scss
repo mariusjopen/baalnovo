@@ -1,6 +1,7 @@
 .image-normal {
 		@extend .elements;
     text-align: -webkit-center;
+		text-align: -moz-center;
 }
 
 .image-normal .inside {

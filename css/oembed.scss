@@ -1,6 +1,7 @@
 .oembed {
 	@extend .elements;
 	    text-align: -webkit-center;
+			text-align: -moz-center;
 }
 
 .oembed .inside {

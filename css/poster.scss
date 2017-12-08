@@ -1,6 +1,7 @@
 .image-poster {
 		@extend .elements;
     text-align: -webkit-center;
+		text-align: -moz-center;
 }
 
 .image-poster .inside {
