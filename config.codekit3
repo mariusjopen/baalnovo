@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "26148",
 "files": {
+	"\/.remote-sync.json": {
+		"ft": 524288,
+		"oA": 0,
+		"oAP": "\/.remote-sync.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/archive-aktuelles.php": {
 		"cB": 0,
 		"ft": 8192,
