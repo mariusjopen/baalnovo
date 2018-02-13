@@ -24,10 +24,18 @@
 
 	if ( ! empty( $terms ) && ! is_wp_error( $terms ) ){
 		foreach ( $terms as $term ) {
+
+		$filter_name = $term->name;
+		$string = $term->name;
+
+		$string = strtolower($string);
+    $string = preg_replace("/[^a-z0-9_\s-]/", "", $string);
+    $string = preg_replace("/[\s-]+/", " ", $string);
+    $string = preg_replace("/[\s_]/", "-", $string);
 		?>
 
-		<div class="filter-item filter-get">
-			<?php echo $term->name ?>
+		<div data-id="<?php echo $string ?>" class="filter-item filter-get">
+			<?php echo $filter_name ?>
 		</div>
 
 		<?php

@@ -7,7 +7,7 @@ jQuery( document ).ready(function() {
   });
 
   jQuery( ".filter-get" ).click(function() {
-    var filter = jQuery(this).html().toLowerCase().trim();
+    var filter = jQuery(this).data("id").toLowerCase().trim();
 
     jQuery(".vorschau-stueck").removeClass("filter-active");
     jQuery("." + filter).addClass("filter-active");

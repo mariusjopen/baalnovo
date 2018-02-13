@@ -7,7 +7,7 @@
 		"uuidString": "C417FE28-5D50-4C43-AEB4-8E94CA2BDA4B"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26261",
 "files": {
 	"\/.remote-sync.json": {
 		"ft": 524288,
@@ -1885,6 +1885,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
