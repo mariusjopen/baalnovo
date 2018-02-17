@@ -1168,6 +1168,16 @@
 		"sC": 3,
 		"tS": 0
 		},
+	"\/js\/min\/lodash.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/js\/min\/lodash.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/min\/menu.min.js": {
 		"ft": 64,
 		"ma": 0,
@@ -1224,6 +1234,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/min\/jquery.flexslider-min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/lib\/lodash.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/min\/lodash.min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0

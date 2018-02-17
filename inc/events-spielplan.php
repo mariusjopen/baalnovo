@@ -1,6 +1,8 @@
 <!-- START EVENTS SPIELPLAN -->
 <div class="events-spielplan spielplan">
 
+	<div class="spielplan-hide">
+
 	<?php
 	$args = array(
 		'post_type'    => 'stuecke',
@@ -127,6 +129,11 @@
 	endif;
 	wp_reset_query();
 	?>
+
+</div>
+
+<div class="spielplan-inside">
+</div>
 
 </div>
 <!-- END EVENTS SPIELPLAN -->

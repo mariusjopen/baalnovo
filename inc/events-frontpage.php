@@ -2,6 +2,8 @@
 
 <div class="spielplan">
 
+<div class="spielplan-hide">
+
 	<?php
 	$args = array(
 		'post_type'    => 'stuecke',
@@ -22,7 +24,6 @@
 			$events = 'events';
 			?>
 
-			<div class="events-start">
 
 				<?php
 				if( have_rows($events) ):
@@ -63,13 +64,18 @@
 				endif;
 				?>
 
-			</div>
+
 
 		<?php
 		endwhile;
 	endif;
 	wp_reset_query();
 	?>
+
+	</div>
+
+	<div class="spielplan-inside">
+	</div>
 
 </div>
 <!-- END EVENTS FRONTPAGE -->

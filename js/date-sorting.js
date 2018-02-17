@@ -1,16 +1,22 @@
 jQuery( document ).ready(function() {
 
-   var sorted = Array.prototype.sort.call(jQuery(".shuffle"), function(a,b){
+	var yourArray = [];
 
-     var date_a = jQuery(a).data("date");
-     var date_b = jQuery(b).data("date");
+	jQuery('.shuffle').each(function() {
+	  yourArray.push(
+			jQuery(this).attr('data-date').split(' ')[0]
+		);
+	});
 
-     return new Date(date_a) < new Date(date_b) ;
+	var yourArray_sort = _.sortBy(yourArray, [ ]);
 
-   });
 
-  jQuery(sorted).each(function(){
-    jQuery(".spielplan").prepend(this);
-  })
+	jQuery.each(yourArray_sort, function(index, item) {
+    console.log(item);
+
+		jQuery('.shuffle[data-date="' + item + '"]').clone().appendTo( ".spielplan-inside" );
+	});
+
+
 
 });
