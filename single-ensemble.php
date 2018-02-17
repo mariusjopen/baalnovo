@@ -3,7 +3,7 @@
 <?php
 include(locate_template('inc/head.php'));
 
-$image = get_field('vorschau_bild');
+$image = get_field('grosses_bild');
 include(locate_template('inc/image-main.php'));
 
 $video = get_field('vorschau_video');
